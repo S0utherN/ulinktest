@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/bootstrap.css"/>
+		<link rel="stylesheet" href="../css/common.css" />
+		<script src="../js/jquery.min.js"></script>
+		<script src="../js/jquery-ui.js"></script>
+		<script src="../js/popper.min.js"></script>
+		<script src="../js/bootstrap.min.js"></script>
+		<style type="text/css">
+			*{padding: 0 !important;margin: 0;}
+			.my-tu{
+				width: 300px;
+				margin: 0 auto;
+			}
+		</style>
+	</head>
+	<body>
+		<header class="carousel">
+			<iframe src="header.html" class="fixed-top "></iframe>
+		</header>
+		<div class="container-fluid bg-dark">
+			<a href="#" class="d-inline-block w-100 my-distribution">
+				<img src="../img/bg.jpg" class="card-img my-distribution"/>
+			</a>
+		
+		<div class="container my-distribution">
+			<div class="mt-1 mb-1">
+				<a href="../index.html" class="text-white">网站首页 /</a>
+				<a href="../exposer.html" class="text-white">风格展示</a>
+			</div>
+			<hr class="bg-white"/>
+			<div class="row my-distribution">
+				<div class="col-9">
+					<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+					  <ol class="carousel-indicators">
+					    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active">
+					    	<img src="img/xiao/xiao.jpg"/></li>
+					    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+					    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+					  </ol>
+					  <div class="carousel-inner">
+					    <div class="carousel-item my-tu active">
+					      <img class="d-block w-100" src="../img/ul.jpg" alt="First slide">
+					    </div>
+					    <div class="carousel-item my-tu">
+					      <img class="d-block w-100" src="../img/ulb2.jpg" alt="Second slide">
+					    </div>
+					    <div class="carousel-item my-tu">
+					      <img class="d-block w-100" src="../img/ulb3.jpg" alt="Third slide">
+					    </div>
+					  </div>
+					  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+					    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					    <span class="sr-only">Previous</span>
+					  </a>
+					  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+					    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+					    <span class="sr-only">Next</span>
+					  </a>
+					</div>
+					<!--<ul class="list-unstyled d-flex">
+						<li class="mr-1"><img src="../img/xiao/xiao.jpg"/></li>
+						<li class="mr-1"><img src="../img/xiao/xiao1.jpg"/></li>
+						<li class="mr-1"><img src="../img/xiao/xiao2.jpg"/></li>
+					</ul>-->
+				</div>
+				<div class="col-3 bg-white text">
+					<nav class="navbar navbar-light mt-3">
+					  <form class="form-inline">
+					    <input class="form-control" type="search" placeholder="请输入" aria-label="Search">
+					    <button class="btn btn-outline-success" type="submit">搜索</button>
+					  </form>
+					 
+					</nav>
+					 <hr/>
+					<div>
+						<p><a href="exposer.html" class="text-dark  ml-3">风格展示</a></p>
+						<p><a href="exposer.html" class="text-dark  ml-3">中式复古</a></p>
+						<p><a href="exposer.html" class="text-dark  ml-3">欧式奢华</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+		<iframe src="footer.html"  class="footer"></iframe>
+	</body>
+</html>

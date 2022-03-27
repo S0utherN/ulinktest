@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+		<link rel="stylesheet" href="css/common.css" />
+		<script src="js/jquery.min.js"></script>
+	<!--	<script src="js/popper.min.js"></script>-->
+<!--		<script src="js/bootstrap.min.js"></script>-->
+		<style type="text/css">
+			*{padding: 0 !important;margin: 0;}
+			.container-fluid>a.d-inline-block{
+				width: 100% !important;
+				height: 200px;
+				overflow: hidden;
+			}
+			.d-none{
+				display: none !important;
+			}
+			.my_w{
+				overflow: hidden;
+				max-width: 20% !important;
+				position: relative;
+			}
+			.my_w>span{
+				width: 100%;
+				height: 100%;
+				color: white;
+				font-size: 30px;
+				opacity: 0.6;
+				background: #000;
+				position: absolute;
+				top:0;
+				left:0;
+			}
+			.my_w:hover span{
+				opacity: 0.4;
+			}
+			.my_w:hover img{
+				transform: scale(1.1);
+			}
+			.container-fluid>ul.list-unstyled{min-width: 1200px;}
+		</style>
+	</head>
+	<body>
+		<header class="carousel">
+			<iframe src="li/header.html" class="fixed-top "></iframe>
+		</header>
+		<div class="container-fluid" id="contauner">
+			<a href="#" class="d-inline-block w-100 my-distribution">
+				<img src="img/bg.jpg" class="card-img my-distribution"/>
+			</a>
+			<ul class="row list-unstyled mt-2" id="tabs">
+				<li class="col-2 text-center offset-3  my-cursor">
+					全部
+				</li>
+				<li class="col-2 text-center my-cursor" data-list = "0">
+					中式复古
+				</li>
+				<li class="col-2 text-center my-cursor" data-list = "1">
+					欧式奢华
+				</li>
+			</ul>
+			<div id="showbox" class="container-fluid w-100  
+				row mt-3  my-distribution">
+				<div class="w-100 row  col-12" >
+					<a href="li/exposer_ar.html" class="d-inline-block col-3 my_w">
+						<img src="img/u3.jpg" class="card-img"/>
+						<span class="d-flex align-items-center justify-content-center">
+							<span>样片</span></span>
+					</a>
+					<a href="li/exposer_ar.html"class="d-inline-block col-3 my_w">
+						<img src="img/u2.jpg" class="card-img"/>
+						<span class="d-flex align-items-center justify-content-center">
+							<span>样片</span></span>
+					</a>
+					<a href="li/exposer_ar.html" class="d-inline-block col-3 my_w">
+						<img src="img/ulb1.jpg" class="card-img"/>
+						<span class="d-flex align-items-center justify-content-center">
+							<span>样片</span></span>
+					</a>
+					<a href="li/exposer_ar.html" class="d-inline-block col-3 my_w">
+						<img src="img/ulb3.jpg" class="card-img"/>
+						<span class="d-flex align-items-center justify-content-center">
+							<span>样片</span></span>
+					</a>
+					<a href="li/exposer_ar.html" class="d-inline-block col-3 my_w">
+						<img src="img/u2.jpg" class="card-img"/>
+						<span class="d-flex align-items-center justify-content-center">
+							<span>样片</span></span>
+					</a>
+				</div>
+				<div class="w-100 row col-12">
+					<a href="#" class="d-inline-block col-3 my_w">
+						<img src="img/ulb3.jpg" class="card-img"/>
+						<span class="d-flex align-items-center justify-content-center">
+							<span>样片</span></span>
+					</a>
+					<a href="#" class="d-inline-block col-3 my_w">
+						<img src="img/u4.jpg" class="card-img"/>
+						<span class="d-flex align-items-center justify-content-center">
+							<span>样片</span></span>
+					</a>
+					<a href="#" class="d-inline-block col-3 my_w">
+						<img src="img/ulb1.jpg" class="card-img"/>
+						<span class="d-flex align-items-center justify-content-center">
+							<span>样片</span></span>
+					</a>
+				</div>
+			</div>
+		</div>
+		<iframe src="li/footer.html"  class="footer"></iframe>
+	</body>
+</html>
+<script>
+	$(function(){
+		//获取父元素
+		var $ct=$('#contauner');
+		//获取列表元素
+		var $showbox=$('#showbox');
+		//从上向下查找添加none
+		$showbox.children().eq(0).siblings().addClass('');
+		//给ul下的第一个li添加字体颜色
+		$ct.find("ul#tabs>li:first").css('color','#C1B497');
+		//获取ul下的第一个li元素(全部)
+		var $t=$ct.find("ul#tabs>li:first");
+		$ct.children('#tabs').on('mouseup','li',function(){
+			$li=$(this);
+			//当点击$t(全部)时候清除所有隐藏
+			$t.on('click',()=>{
+				//当点击$t元素时清除$showbox子元素下的所有d-none属性
+				$showbox.children().removeClass('d-none')
+			})
+			//当点击选项的时候它添加字体颜色它的兄弟字体颜色移除
+			$li.css('color','#C1B497').siblings().css('color','')
+			
+			var $val=$li.attr('data-list');
+			var a=$showbox.children().eq($val)
+			.removeClass('d-none').siblings().addClass('d-none')
+			console.log(a);
+		})
+	})
+</script>
