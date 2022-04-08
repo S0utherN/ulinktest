@@ -235,11 +235,11 @@ i::after {
 
 ::-webkit-scrollbar {
     width: 7px;
-    background-color: #0ff1f1;
+    background-color: #f1c30f;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #0fe9f1;
+    background: #f1c30f;
 }
 
 .pt-10px {
@@ -1444,7 +1444,7 @@ header.header-appear .navbar-top-default .header-social a:hover {
     position: fixed;
     right: 0;
     top: 0;
-    background: #35c8f5;
+    background: #f1c30f;
     z-index: 1032;
     height: 100%;
     -webkit-transform: translate3d(100%, 0, 0);
@@ -1724,7 +1724,7 @@ header.header-appear .navbar-top-default .header-social a:hover {
     width: 100%;
     position: fixed;
     bottom: 0;
-    background: #229999ec;
+    background: #f1c30f;
     -webkit-transform: translate3d(0, -100%, 0);
     transform: translate3d(0, -100%, 0);
     overflow-x: hidden;

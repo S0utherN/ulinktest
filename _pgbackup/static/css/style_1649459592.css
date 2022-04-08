@@ -235,11 +235,11 @@ i::after {
 
 ::-webkit-scrollbar {
     width: 7px;
-    background-color: #0ff1f1;
+    background-color: #f1c30f;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #0fe9f1;
+    background: #f1c30f;
 }
 
 .pt-10px {
