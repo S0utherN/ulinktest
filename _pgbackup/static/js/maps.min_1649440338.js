@@ -7,7 +7,7 @@ if ($("#google-map").length) {
                "featureType": "water",
                "elementType": "geometry",
                "stylers": [{
-                  "color": "#00bfff"
+                  "color": "#d3d3d3"
             }, {
                   "lightness": 17
             }]
@@ -15,7 +15,7 @@ if ($("#google-map").length) {
                "featureType": "landscape",
                "elementType": "geometry",
                "stylers": [{
-                  "color": "#a3a3a3"
+                  "color": "#e5e5e5"
             }, {
                   "lightness": 20
             }]
@@ -23,7 +23,7 @@ if ($("#google-map").length) {
                "featureType": "road.highway",
                "elementType": "geometry.fill",
                "stylers": [{
-                  "color": "#707070"
+                  "color": "#ffffff"
             }, {
                   "lightness": 17
             }]
@@ -31,7 +31,7 @@ if ($("#google-map").length) {
                "featureType": "road.highway",
                "elementType": "geometry.stroke",
                "stylers": [{
-                  "color": "#d1d1d1"
+                  "color": "#ffffff"
             }, {
                   "lightness": 29
             }, {
