@@ -121,7 +121,7 @@ if ($("#google-map").length) {
         }],
            
             /* --Add your Location here-- */
-            center: new google.maps.LatLng(51.426451, -0.563011)
+            center: new google.maps.LatLng(-33.8826177, 151.2287826)
          };
          var map = new google.maps.Map(document.getElementById('google-map'),
             mapOptions);
