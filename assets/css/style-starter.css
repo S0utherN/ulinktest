@@ -18727,7 +18727,7 @@ a.dropdown-item.active {
     position: relative;
     display: grid;
     align-items: center;
-    min-height: 420px;
+    min-height: 320px;
     background-size: cover;
 }
 
