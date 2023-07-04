@@ -286,11 +286,11 @@ h1 {
 .carousel-image {
     position: absolute;
     left: 40%;
-    top: 6vw;
+    top: 20vw;
 }
 
 img.responsive {
-    width: 80%;
+    width: 90%;
     height: auto;
 }
 
@@ -555,7 +555,7 @@ fieldset[disabled] .btn-primary.active {
     }
 }
 
-@media (min-width: 1200px) and (max-width: 1600px) {
+@media (min-width: 1200px){
     .carousel-image {
         right: 30%;
         top: 10vw;
@@ -563,18 +563,6 @@ fieldset[disabled] .btn-primary.active {
 
     img.responsive {
         width: 180%;
-        height: auto;
-    }
-}
-
-@media (min-width: 991px) and (max-width: 1200px) {
-    .carousel-image {
-        right: 20%;
-        top: 20vw;
-    }
-
-    img.responsive {
-        width: 120%;
         height: auto;
     }
 }

@@ -21,6 +21,9 @@
     <![endif]-->
         <!-- Custom styles for this template -->
         <link href="css/style.css" rel="stylesheet">
+        <script src="js/skel.min.js"></script>
+        <script src="js/init.js"></script>
+        <script src="js/lte-ie7.js" defer></script>
         <script src="js/jquery-2.1.1.js" defer></script>
         <script src="js/pace.min.js" defer></script>
         <script src="js/bootstrap.min.js" defer></script>
@@ -28,8 +31,25 @@
         <script src="js/cbpAnimatedHeader.js" defer></script>
         <script src="js/wow.min.js" defer></script>
         <script src="js/inspinia.js" defer></script>
+        <noscript>
+            <link rel="stylesheet" href="css/skel.css"/>
+            <link rel="stylesheet" href="css/style2.css"/>
+            <link rel="stylesheet" href="css/style-wide.css"/>
+            <link rel="stylesheet" href="css/style-noscript.css"/>
+        </noscript>
     </head>
     <body id="page-top">
+        <div id="wrapper">
+            <div id="bg"></div>
+            <div id="overlay"></div>
+            <div id="main">
+                <!-- Header -->
+                <header id="header">
+                    <h1>Adam Jensen</h1>
+                    <p>Security Chief &nbsp;&bull;&nbsp; Cyborg &nbsp;&bull;&nbsp; Never asked for this</p>
+                </header>
+            </div>
+        </div>
         <div class="navbar-wrapper">
             <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
                 <div class="container">
@@ -74,21 +94,37 @@
                 <li data-target="#inSlider" data-slide-to="1"></li>
             </ol>
 			-->
-            <div class="carousel-inner" role="listbox"> 
-                <div class="container"> 
-                    <div class="carousel-caption">
-                        <header id="header">
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <div class="container">
+                        <div class="carousel-caption">
                             <h1>首页大字<br/>
-								ULINK服务介绍<br/></h1>
+                        	ULINK服务介绍<br/></h1>
                             <p>介绍</p>
-                        </header>
+                            <!--
+								<p> <a class="btn btn-lg btn-primary" href="#" role="button">READ MORE</a> <a class="caption-link" href="#" role="button">Inspinia Theme</a> </p>
+							-->
+                        </div>
+                        <div class="carousel-image wow zoomIn">
+                            <img src="img/benz1.png" alt="laptop" class="responsive"/>
+                        </div>
                     </div>
+                    <!-- Set background for slide in css -->
                     <div class="header-back one"></div>
-                    <div class="carousel-image wow zoomIn">
-                        <img src="img/benz1.png" alt="laptop" class="responsive"/>
-                    </div>
                 </div>
-                <!-- Set background for slide in css -->
+                <div class="item">
+                    <div class="container">
+                        <div class="carousel-caption blank">
+                            <h1>第二页 <br/> 介绍</h1>
+                            <p>介绍</p>
+                            <!--
+                            <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+							-->
+                        </div>
+                    </div>
+                    <!-- Set background for slide in css -->
+                    <div class="header-back two"></div>
+                </div>
             </div>
             <a class="left carousel-control" href="#inSlider" role="button" data-slide="prev"> <img width="60" height="60" src="img/icons8-left-60.png" alt="left-squared"/> <span class="sr-only">Previous</span> </a>
             <a class="right carousel-control" href="#inSlider" role="button" data-slide="next"> <img width="60" height="60" src="img/icons8-right-60.png" alt="right-squared"/> <span class="sr-only">Next</span> </a>

@@ -286,11 +286,11 @@ h1 {
 .carousel-image {
     position: absolute;
     left: 40%;
-    top: 6vw;
+    top: 20vw;
 }
 
 img.responsive {
-    width: 80%;
+    width: 90%;
     height: auto;
 }
 
@@ -555,86 +555,14 @@ fieldset[disabled] .btn-primary.active {
     }
 }
 
-@media (min-width: 1200px) and (max-width: 1600px) {
+@media (max-width: 768px) {
     .carousel-image {
-        right: 30%;
-        top: 10vw;
-    }
-
-    img.responsive {
-        width: 180%;
-        height: auto;
-    }
-}
-
-@media (min-width: 991px) and (max-width: 1200px) {
-    .carousel-image {
-        right: 20%;
-        top: 20vw;
-    }
-
-    img.responsive {
-        width: 120%;
-        height: auto;
-    }
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-    .carousel-image {
-        right: 30%;
-        top: 30vw;
-    }
-
-    img.responsive {
-        width: 180%;
-        height: auto;
-    }
-}
-
-@media (min-width: 650px) and (max-width: 768px) {
-    .carousel-image {
-        right: 30%;
+        right: 40%;
         top: 40vw;
     }
 
     img.responsive {
-        width: 180%;
-        height: auto;
-    }
-}
-
-@media (min-width: 576px) and (max-width: 650px) {
-    .carousel-image {
-        right: 30%;
-        top: 50vw;
-    }
-
-    img.responsive {
-        width: 180%;
-        height: auto;
-    }
-}
-
-@media (min-width: 500px) and (max-width: 576px) {
-    .carousel-image {
-        right: 30%;
-        top: 60vw;
-    }
-
-    img.responsive {
-        width: 180%;
-        height: auto;
-    }
-}
-
-@media (max-width: 500px) {
-    .carousel-image {
-        right: 30%;
-        top: 70vw;
-    }
-
-    img.responsive {
-        width: 180%;
+        width: 140%;
         height: auto;
     }
 }
