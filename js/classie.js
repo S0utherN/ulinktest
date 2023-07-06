@@ -78,3 +78,9 @@
     }
 
 })( window );
+
+window.onscroll = function() {
+    var scroll = window.scrollY;
+    document.body.style.backgroundPosition = scroll + "px" + " 0px";
+};
+
