@@ -37,7 +37,7 @@ body {
 	height: 100vh;
   	margin: 0;
   	background-size: 100%;
-  	background-image: url("../img/bg1.png");
+  	background-image: url("../img/bg2.png");
     background-repeat: repeat;
     /* text-shadow: 
         1px 1px 0 rgba(0, 0, 0, 0.479), 
@@ -120,7 +120,7 @@ h1 {
 
 .navbar-default.navbar-scroll {
     background-color: rgba(34, 34, 34, 0.925);
-    border-color: #ffffff;
+    border-color: #767676;
     padding: 15px 0;
 }
 
@@ -196,7 +196,7 @@ h1 {
 .navbar-wrapper .navbar.navbar-scroll {
     padding-top: 0;
     padding-bottom: 5px;
-    border-bottom: 1px solid #e7eaec;
+    border-bottom: 1px solid #ffffff;
     border-radius: 0;
 }
 
