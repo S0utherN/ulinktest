@@ -19,6 +19,18 @@
     src: url('../fonts/PlayfairDisplay-ExtraBold.ttf') format('truetype');
 }
 
+.intro1{
+    height: 20vw;
+    top: 40%;
+    left: 15%;
+    position: absolute;
+}
+
+.rightAL{
+    text-align: right !important;
+    margin-right: 10%;
+}
+
 .logo {
     position: absolute;
     top: 1vw;
@@ -59,7 +71,7 @@ body {
 }
 
 span.navy {
-    color: #1ab394;
+    color: #ffe72e;
 }
 
 p.text-color {
@@ -67,12 +79,12 @@ p.text-color {
 }
 
 a.navy-link {
-    color: #1ab394;
+    color: #ffe72e;
     text-decoration: none;
 }
 
 a.navy-link:hover {
-    color: #17a185;
+    color: #ffe72e;
 }
 
 section p {
@@ -94,7 +106,7 @@ h1 {
     width: 60px;
     height: 1px;
     margin: 60px auto 0;
-    border-bottom: 2px solid #1ab394;
+    border-bottom: 2px solid #ffe72e;
 }
 
 /* CUSTOMIZE THE NAVBAR
@@ -154,7 +166,7 @@ h1 {
 }
 
 .navbar-default .navbar-nav > li > a:hover {
-    color: #1ab394;
+    color: #ffe72e;
 }
 
 .navbar-default .navbar-nav > .active > a:focus {
@@ -178,7 +190,7 @@ h1 {
     height: auto;
     display: block;
     font-size: 14px;
-    background: #1ab394;
+    background: #ffe72e;
     padding: 15px 20px 15px 20px;
     border-radius: 0 0px 5px 5px;
     font-weight: 700;
@@ -190,7 +202,7 @@ h1 {
 }
 
 .navbar-scroll.navbar-default .nav li a:hover {
-    color: #1ab394;
+    color: #ffe72e;
 }
 
 .navbar-wrapper .navbar.navbar-scroll {
@@ -349,6 +361,16 @@ img.responsive {
 
 .carousel-indicators {
     padding-right: 0vw;
+    position: absolute; 
+    top: 200%; 
+    left: 52%;
+}
+
+.my-indicators {
+    padding-right: 0vw;
+    position: absolute; 
+    top: 204%; 
+    left: 47.5%;
 }
 
 .carousel-caption h1 {
@@ -397,7 +419,7 @@ img.responsive {
 }
 
 .features small {
-    color: #1ab394;
+    color: #ffe72e;
 }
 
 .features h2 {
@@ -414,19 +436,18 @@ img.responsive {
 }
 
 .features-icon {
-    color: #1ab394;
+    color: #ffe72e;
     font-size: 40px;
 }
 
 .navy-section {
     margin-top: 60px;
-    background: #1ab394;
+    background: #ffe72e;
     color: #fff;
     padding: 20px 0;
 }
 
 .gray-section {
-    background: #f4f4f4;
     margin-top: 60px;
 }
 
@@ -439,7 +460,7 @@ img.responsive {
 }
 
 .social-icon a {
-    background: #1ab394;
+    background: #ffe72e;
     color: #fff;
     padding: 4px 8px;
     height: 28px;
@@ -464,11 +485,11 @@ img.responsive {
 }
 
 .pricing-plan.selected {
-    background:linear-gradient(75deg, rgb(149, 149, 153), rgba(212, 219, 219, 0.904), rgba(192,191,197));
+    background:linear-gradient(75deg, rgb(162, 160, 105), rgba(222, 165, 10, 0.904), rgb(245, 108, 4));
 }
 
 .pricing-plan.Basic {
-    background:linear-gradient(75deg, rgba(87, 152, 159, 0.805), rgba(124, 216, 226, 0.915), rgba(95, 164, 171, 0.827));
+    background:linear-gradient(75deg, rgba(157, 159, 87, 0.805), rgba(255, 238, 0, 0.915), rgba(171, 156, 95, 0.827));
 }
 
 .pricing-plan.Premium {
@@ -486,7 +507,7 @@ img.responsive {
 
 .pricing-plan .pricing-price span {
     font-weight: 700;
-    color: #1ab394;
+    color: #ffe72e;
 }
 
 li.pricing-desc {
@@ -509,7 +530,7 @@ li.pricing-title {
 .testimonials {
     padding-top: 40px;
     padding-bottom: 60px;
-    background-color: #1ab394;
+    background-color: #ffe100b4;
 
     /* background-image: url('../img/avatar_all.png'); */
 }
@@ -519,7 +540,7 @@ li.pricing-title {
 }
 
 .features .big-icon {
-    color: #1ab394;
+    color: #ffe72e;
 }
 
 .contact {
@@ -538,8 +559,8 @@ li.pricing-title {
 }
 
 .btn-primary {
-    background-color: #1ab394;
-    border-color: #1ab394;
+    background-color: #ffe72e;
+    border-color: #ffe72e;
     color: #FFFFFF;
     font-size: 14px;
     padding: 10px 20px;
@@ -654,7 +675,7 @@ fieldset[disabled] .btn-primary.active {
 
 @media (max-width: 768px) {
     .carousel-image {
-        top: 65vh;
+        top: 60vh;
         left: -12vh;
         transform: scale(0.5);
     }
@@ -732,7 +753,7 @@ fieldset[disabled] .btn-primary.active {
     }
 
     .navbar-default .nav li a:hover {
-        color: #1ab394;
+        color: #ffe72e;
     }
 
     .navbar-wrapper .navbar {
@@ -784,7 +805,7 @@ fieldset[disabled] .btn-primary.active {
     }
     
     .header-back.two {
-        background: url('../img/mob1.jpg') center center no-repeat;
+        background: url('../img/mob2.png') center center no-repeat;
         background-size: cover;
     }
 }
@@ -1358,16 +1379,26 @@ fieldset[disabled] .btn-primary.active {
 }
 
 #header h1 {
-    font-size: 3em;
+    font-size: 4em;
     font-weight: 800;
     letter-spacing: 0.035em;
     line-height: 1em;
+    text-align: left;
+    background: linear-gradient(45deg, #ffd500, #ff7c01,  #f64b24);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 2px 2px 4px rgba(255, 61, 61, 0.5);
 }
 
 #header p {
-    font-size: 1.25em;
+    font-size: 2.25em;
     margin: 0.75em 0 0.25em 0;
-    opacity: 0.75;
+    opacity: 1;
+    color: #ffbb00;
+    font-family: 'EBGaramond-Bold';
+    text-align: left;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    -webkit-text-stroke: 1px rgba(0, 0, 0, 0.773);
 }
 
 #header nav {
