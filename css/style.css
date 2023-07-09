@@ -362,15 +362,16 @@ img.responsive {
 .carousel-indicators {
     padding-right: 0vw;
     position: absolute; 
-    top: 200%; 
+    top: 92vh; 
     left: 52%;
 }
 
 .my-indicators {
     padding-right: 0vw;
     position: absolute; 
-    top: 204%; 
-    left: 47.5%;
+    top: 93vh; 
+    z-index: 9999;
+    left: 48%;
 }
 
 .carousel-caption h1 {
