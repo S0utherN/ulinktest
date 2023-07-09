@@ -57,7 +57,7 @@ body {
 }
 
 #stage-1 {
-    height: 100vh; 
+    height: 95vh; 
     background: #000;
 }
 
@@ -231,7 +231,7 @@ h1 {
 /* BACKGROUNDS SLIDER
 -------------------------------------------------- */
 .header-back {
-    height: 100vh;
+    height: 95vh;
     width: 100%;
 }
 
@@ -362,14 +362,14 @@ img.responsive {
 .carousel-indicators {
     padding-right: 0vw;
     position: absolute; 
-    top: 92vh; 
+    top: 87vh; 
     left: 52%;
 }
 
 .my-indicators {
     padding-right: 0vw;
     position: absolute; 
-    top: 93vh; 
+    top: 88vh; 
     z-index: 9999;
     left: 48%;
 }
@@ -676,7 +676,7 @@ fieldset[disabled] .btn-primary.active {
 
 @media (max-width: 768px) {
     .carousel-image {
-        top: 60vh;
+        top: 55vh;
         left: -12vh;
         transform: scale(0.5);
     }
