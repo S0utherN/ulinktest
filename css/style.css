@@ -165,7 +165,7 @@ a.navy-link:hover {
 
 section p {
     color: rgb(0, 0, 0);
-    font-size: 16px;
+    font-size: 14px;
     text-align: left;
     font-family: 'didot';
 }
@@ -1473,7 +1473,7 @@ fieldset[disabled] .btn-primary.active {
 
 #header h1 {
     font-family: 'EBGaramond-Bold';
-    font-size: 3.75em;
+    font-size: 3em;
     font-weight: 800;
     letter-spacing: 0.035em;
     line-height: 1em;
@@ -1484,7 +1484,7 @@ fieldset[disabled] .btn-primary.active {
 }
 
 #header p {
-    font-size: 1.75em;
+    font-size: 1.25em;
     margin: 0.75em 0 0.25em 0;
     opacity: 1;
     color: #ffffff;
