@@ -28,6 +28,9 @@
     z-index: -1;
   } */
 
+.bottomc{
+    text-shadow: 1px 1px 2px #00000093;
+}
 
 .intro1{
     height: 20vw;
@@ -59,7 +62,8 @@ body {
 	height: 100vh;
   	margin: 0;
   	background-size: 100%;
-  	background-image: url("../img/bg2.png");
+    background-color: rgb(255, 255, 240);
+  	/* background-image: url("../img/bg2.png"); */
     background-repeat: repeat;
     /* text-shadow: 
         1px 1px 0 rgba(0, 0, 0, 0.479), 
@@ -82,6 +86,7 @@ body {
 
 span.navy {
     color: #ffe72e;
+    
 }
 
 p.text-color {
@@ -89,8 +94,9 @@ p.text-color {
 }
 
 a.navy-link {
-    color: #ffe72e;
+    color: #b14d0f;
     text-decoration: none;
+    text-shadow: 1px 1px 2px rgba(83, 83, 83, 0.751);
 }
 
 a.navy-link:hover {
@@ -98,7 +104,7 @@ a.navy-link:hover {
 }
 
 section p {
-    color: rgb(255, 255, 240);
+    color: rgb(0, 0, 0);
     font-size: 16px;
 }
 
@@ -454,7 +460,7 @@ img.responsive {
 .navy-section {
     margin-top: 60px;
     background: #ffe72e;
-    color: #fff;
+    color: #3b3b3b;
     padding: 20px 0;
 }
 
@@ -512,8 +518,8 @@ img.responsive {
     padding: 10px 16px;
     text-align: center;
     color: #3c3c3c;
-    text-shadow: 
-		2px 2px 4px rgba(0, 0, 0, 0.399);
+    /* text-shadow: 
+		2px 2px 4px rgba(0, 0, 0, 0.399); */
 }
 
 .pricing-plan .pricing-price span {
@@ -556,7 +562,7 @@ li.pricing-title {
 
 .contact {
     margin-top: 60px;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.096), rgb(0, 0, 0));
+    background: linear-gradient(to bottom, rgba(255, 255, 240, 0.7), rgb(235, 224, 176, 0.7), rgba(155, 133, 104, 0.7), rgba(136, 108, 73, 0.7));
 }
 
 /* Buttons - only primary custom button
