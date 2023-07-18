@@ -5,8 +5,8 @@
 /* GLOBAL STYLES
 -------------------------------------------------- */
 @font-face {
-    font-family: 'PlayfairDisplay-Black';
-    src: url('../fonts/PlayfairDisplay-Black.ttf') format('truetype');
+    font-family: 'didot';
+    src: url('../fonts/GFSDidot-Regular.ttf') format('truetype');
 }
 
 @font-face {
@@ -27,6 +27,51 @@
     right: 0;
     z-index: -1;
   } */
+
+/* .flex{
+    display: flex; 
+    align-items: stretch;
+} */
+
+.team *{
+    text-align: center;
+}
+
+.contact .navy-line{
+    border-bottom: 3px solid #ffffffd0;
+}
+
+.contact *{
+    color: rgb(255, 255, 255);
+}
+
+.col-sm-3 .black{
+    width: 300px !important;
+    margin: 0 !important;
+}
+
+.col-sm-3 h2{
+    margin-top: 8px !important;
+}
+
+.btn-lg{
+    background-color: rgba(56, 122, 50, 0.685) !important;
+}
+
+.col-lg-12 h1{
+    text-shadow: 2px 2px 8px rgba(104, 104, 104, 0.5) !important;
+    text-transform: uppercase;
+}
+
+.black{
+    border-bottom: 2px solid #727272e7 !important;
+    width: 100px !important;
+    margin: 0px auto 0 !important;
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-color: #e7e7e700 !important;
+}
 
 .bottomc{
     text-shadow: 1px 1px 2px #00000093;
@@ -57,14 +102,16 @@
   }
 
 body {
-    color: rgb(252, 191, 79);
-    font-family: 'PlayfairDisplay-Black';
+    color: rgb(92, 57, 11);
+    font-family: 'EBGaramond-Bold';
 	height: 100vh;
   	margin: 0;
   	background-size: 100%;
-    background-color: rgb(255, 255, 240);
+    background-color: rgb(255, 255, 250);
   	/* background-image: url("../img/bg2.png"); */
     background-repeat: repeat;
+    
+
     /* text-shadow: 
         1px 1px 0 rgba(0, 0, 0, 0.479), 
 		1px 1px 3px rgba(0, 0, 0, 0.484); */
@@ -78,14 +125,14 @@ body {
 #header{
 	color: #ffbb00;
     font-family: 'PlayfairDisplay-Black';
-	text-shadow: 
+	/* text-shadow: 
         1px 1px 0 rgba(0, 0, 0, 0.479), 
 		
-		4px 3px 6px rgba(0, 0, 0, 0.5);
+		4px 3px 6px rgba(0, 0, 0, 0.5); */
 }
 
 span.navy {
-    color: #ffe72e;
+    color: rgb(231, 223, 186);
     
 }
 
@@ -94,9 +141,11 @@ p.text-color {
 }
 
 a.navy-link {
-    color: #b14d0f;
+    font-family: "EBGaramond-Bold";
+    text-transform: uppercase;
+    color: rgba(35, 112, 28, 0.926);
     text-decoration: none;
-    text-shadow: 1px 1px 2px rgba(83, 83, 83, 0.751);
+    text-shadow: 2px 2px 8px rgba(83, 83, 83, 0.601);
 }
 
 a.navy-link:hover {
@@ -106,6 +155,8 @@ a.navy-link:hover {
 section p {
     color: rgb(0, 0, 0);
     font-size: 16px;
+    text-align: left;
+    font-family: 'didot';
 }
 
 address {
@@ -119,10 +170,10 @@ h1 {
 }
 
 .navy-line {
-    width: 60px;
+    width: 80px;
     height: 1px;
     margin: 60px auto 0;
-    border-bottom: 2px solid #ffe72e;
+    border-bottom: 3px solid #262626d0;
 }
 
 /* CUSTOMIZE THE NAVBAR
@@ -378,7 +429,7 @@ img.responsive {
 .carousel-indicators {
     padding-right: 0vw;
     position: absolute; 
-    top: 87vh; 
+    top: 93vh; 
     left: 52%;
 }
 
@@ -440,8 +491,11 @@ img.responsive {
 }
 
 .features h2 {
-    font-size: 18px;
+    font-size: 20px;
     margin-top: 5px;
+    font-family: "PlayfairDisplay-ExtraBold";
+    color: rgb(0, 0, 0);
+    text-align: center;
 }
 
 .features-text-alone {
@@ -477,8 +531,8 @@ img.responsive {
 }
 
 .social-icon a {
-    background: #ffe72e;
-    color: #fff;
+    background: rgb(228, 215, 157);
+    
     padding: 4px 8px;
     height: 28px;
     width: 28px;
@@ -506,11 +560,11 @@ img.responsive {
 }
 
 .pricing-plan.Basic {
-    background:linear-gradient(45deg, rgba(255, 255, 240, 0.7), rgb(235, 224, 176, 0.7),  rgb(210, 180, 140, 0.7), rgb(193, 154, 107, 0.7));
+    background:rgba(235, 224, 176, 0.31);
 }
 
 .pricing-plan.Premium {
-    background:linear-gradient(45deg, rgba(255, 255, 240, 0.7), rgb(235, 224, 176, 0.7),  rgb(210, 180, 140, 0.7), rgb(193, 154, 107, 0.7));
+    background:rgba(235, 224, 176, 0.31);
 }
 
 .pricing-plan li {
@@ -523,19 +577,21 @@ img.responsive {
 }
 
 .pricing-plan .pricing-price span {
-    font-weight: 700;
-    color: #ffe72e;
+    font-weight: 800;
+    color: #025414;
+    font-size: 20px !important;
 }
 
 li.pricing-desc {
     font-size: 13px;
     border-top: none;
     padding: 20px 16px ;
+    text-align: left;
 }
 
 li.pricing-title {
-    background: rgba(255, 255, 240, 0.81);
-    color: rgb(102, 61, 14);
+    background: rgba(35, 35, 35, 0.81);
+    color: #ffffff;
     padding: 10px;
     border-radius: 4px 4px 0 0;
     font-size: 32px;
@@ -562,7 +618,7 @@ li.pricing-title {
 
 .contact {
     margin-top: 60px;
-    background: linear-gradient(to bottom, rgba(255, 255, 240, 0.7), rgb(235, 224, 176, 0.7), rgba(155, 133, 104, 0.7), rgba(136, 108, 73, 0.7));
+    background: rgb(0, 0, 0);
 }
 
 /* Buttons - only primary custom button
@@ -576,7 +632,7 @@ li.pricing-title {
 }
 
 .btn-primary {
-    background-color: rgba(219, 162, 88, 0.926);
+    background-color: rgba(35, 112, 28, 0.926);
     border-color: #ffffff00;
     color: rgb(255, 255, 240);
     font-size: 14px;
@@ -591,7 +647,7 @@ li.pricing-title {
 .btn-primary:active,
 .btn-primary.active,
 .open .dropdown-toggle.btn-primary {
-    background-color: rgba(153, 94, 18, 0.926);
+    background-color: #025414;
     border-color: #ffffff00;
     color: #FFFFFF;
 }
@@ -757,8 +813,8 @@ fieldset[disabled] .btn-primary.active {
     }
 
     .navbar-default {
-        background: linear-gradient(45deg, rgba(255, 255, 240, 0.98), rgb(235, 224, 176, 0.98),  rgb(210, 180, 140, 0.98), rgb(193, 154, 107, 0.98));
-        border-color: #000000;
+        background: linear-gradient(to top, rgba(231, 223, 186, 0.955), rgba(231, 223, 186, 0.977),  rgb(231, 223, 186)) no-repeat;
+
         padding: 15px 0;
     }
 
@@ -768,17 +824,17 @@ fieldset[disabled] .btn-primary.active {
     }
 
     .navbar-default .nav li a {
-        color: rgb(252, 191, 79);
+        color: rgb(0, 0, 0);
     }
 
     .navbar-default .nav li a:hover {
-        color: #ffe72e;
+        color: rgb(59, 152, 28);
     }
 
     .navbar-wrapper .navbar {
         padding-top: 0;
         padding-bottom: 5px;
-        border-bottom: 1px solid #545454;
+        
         border-radius: 0;
     }
 
@@ -1393,19 +1449,20 @@ fieldset[disabled] .btn-primary.active {
     text-align: center;
     top: -1em;
     vertical-align: middle;
-    width: 90%;
+    width: 100%;
 	
 }
 
 #header h1 {
+    font-family: 'EBGaramond-Bold';
     font-size: 3.75em;
     font-weight: 800;
     letter-spacing: 0.035em;
     line-height: 1em;
     text-align: left;
-    background: linear-gradient(45deg, rgba(255, 255, 240, 0.6), rgb(235, 224, 176, 0.6),  rgb(210, 180, 140, 0.6), rgb(193, 154, 107, 0.6));
-    -webkit-text-fill-color: rgb(255, 167, 58);
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5)
+    background: linear-gradient(to right, rgb(235, 224, 176), rgb(235, 224, 176), rgba(235, 224, 176, 0.59),rgba(235, 224, 176, 0.289));
+    -webkit-text-fill-color: rgba(81, 46, 3, 0.974);
+    /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5) */
 }
 
 #header p {
