@@ -33,6 +33,13 @@
     align-items: stretch;
 } */
 
+.intro2{
+    height: 20vw;
+    top: 60%;
+    left: 15%;
+    position: absolute;
+}
+
 .team *{
     text-align: center;
 }
@@ -46,8 +53,9 @@
 }
 
 .col-sm-3 .black{
-    width: 300px !important;
+    width: 60vw !important;
     margin: 0 !important;
+    margin-top: 20px !important;
 }
 
 .col-sm-3 h2{
@@ -78,8 +86,8 @@
 }
 
 .intro1{
-    height: 20vw;
-    top: 40%;
+    height: 19vw;
+    top: 35%;
     left: 15%;
     position: absolute;
 }
@@ -613,7 +621,7 @@ li.pricing-title {
 }
 
 .features .big-icon {
-    color: #ffe72e;
+    color: rgba(11, 71, 6, 0.923);
 }
 
 .contact {
@@ -681,6 +689,10 @@ fieldset[disabled] .btn-primary.active {
 -------------------------------------------------- */
 @media (min-width: 768px) {
     /* Navbar positioning foo */
+    .col-sm-3 .black{
+        width: 10vw !important;
+    }
+
     .navbar-wrapper {
         margin-top: 20px;
     }
@@ -1461,7 +1473,7 @@ fieldset[disabled] .btn-primary.active {
     line-height: 1em;
     text-align: left;
     background: linear-gradient(to right, rgb(235, 224, 176), rgb(235, 224, 176), rgba(235, 224, 176, 0.59),rgba(235, 224, 176, 0.289));
-    -webkit-text-fill-color: rgba(81, 46, 3, 0.974);
+    -webkit-text-fill-color: rgba(28, 28, 28, 0.947);
     /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5) */
 }
 
