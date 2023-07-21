@@ -25,6 +25,53 @@
 }
 
 
+@font-face {
+    font-family: 'sora';
+    src: url('../fonts/Sora-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'sorare';
+    src: url('../fonts/Sora-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'libre';
+    src: url('../fonts/LibreBaskerville-Bold.ttf') format('truetype');
+}
+
+
+
+.disable h1{
+    background: none !important;
+}
+
+.col-sm-3 .black{
+    border-bottom: 3px solid #000000e7 !important;
+    border-radius: 2px 2px 2px 2px;
+}
+
+.col-sm-3 img{
+    margin-bottom: 2vh;
+}
+
+.col-sm-3{
+    padding-right: 30px !important;
+    padding-left: 30px !important;
+}
+
+.col-lg-5{
+    padding-right: 30px !important;
+    padding-left: 30px !important;
+}
+
+.text-center h1{
+    margin-top: 8px !important;
+    /* background: rgb(0, 0, 0);
+    border-radius: 4px 4px 4px 4px; */
+    padding: 2vh;
+    margin-bottom: 2vh;
+}
 
 .single{
     width: 86% !important;
@@ -66,7 +113,7 @@
 }
 
 .text-center{
-    padding: 0 50px;
+    padding: 0 30px;
 }
 
 
@@ -85,11 +132,16 @@
 }
 
 .s1{
-    top:30vw !important;
+    /* top:90vw !important; */
 }
 
-.s2{
-    top:120vw !important;
+.s2 #header h1{
+    -webkit-text-fill-color: rgba(255, 255, 255, 0.947);
+    background: linear-gradient(to right, rgb(0, 0, 0), rgb(0, 0, 0), rgba(0, 0, 0, 0.974),rgba(0, 0, 0, 0.432)) !important;
+}
+
+.s2 #header p{
+    color: rgb(255, 255, 255);
 }
 
 .bgblk{
@@ -106,9 +158,6 @@
     position: relative;
 }
 
-.team *{
-    text-align: center;
-}
 
 .contact .navy-line{
     border-bottom: 3px solid #ffffffd0;
@@ -119,20 +168,20 @@
 }
 
 .col-sm-3 .black{
-    width: 60vw !important;
+    width: 80vw !important;
     margin: 0 !important;
     margin-top: 20px !important;
 }
 
 .col-sm-3 h2{
-    margin-top: 8px !important;
+    /* margin-top: 8px !important;
     background: rgba(0, 0, 0, 0.118);
     border-radius: 4px 4px 4px 4px;
-    padding: 1vw;
+    padding: 1vw; */
 }
 
 .btn-lg{
-    background-color: rgba(56, 122, 50, 0.685) !important;
+    background-color: rgba(56, 122, 50, 0.919) !important;
 }
 
 .col-lg-12 h1{
@@ -156,7 +205,7 @@
 }
 
 .intro1{
-    height: 30vw;
+    height: 40vw;
     align-items: center;
     margin: 0 auto;
     /* top: 60%; */
@@ -176,6 +225,7 @@
 .rightAL .smalltitle{
     font-size: 16px;
     text-align: left;
+    font-family: 'sora' ;
 }
 
 .rightAL .price{
@@ -195,7 +245,7 @@
   }
 
 body {
-    color: rgb(92, 57, 11);
+    color: rgb(0, 0, 0);
     font-family: 'EBGaramond-Bold';
 	height: 100vh;
   	margin: 0;
@@ -247,9 +297,10 @@ a.navy-link:hover {
 
 section p {
     color: rgb(0, 0, 0);
-    font-size: 15px;
-    text-align: left;
-    font-family: 'didot';
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    font-family: 'sorare';
 }
 
 address {
@@ -298,14 +349,14 @@ h1 {
 }
 
 .navbar-default {
-    background: linear-gradient(to top, rgba(231, 223, 186, 0.955), rgba(231, 223, 186, 0.977), rgb(231, 223, 186)) no-repeat;
+    background: rgba(6, 6, 6, 0.967);
     border-color: transparent;
     transition: all 0.3s ease-in-out 0s;
 }
 
 .navbar-default .nav li a {
-    color: rgb(0,0, 0);
-    font-family: 'EBGaramond-Bold', helvetica, arial, sans-serif;
+    color: rgb(255, 255, 255);
+    font-family: 'sora', helvetica, arial, sans-serif;
     font-weight: 700;
     letter-spacing: 1px;
     text-transform: uppercase;
@@ -322,7 +373,7 @@ h1 {
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover {
     background: transparent;
-    color: rgb(128, 83, 0);
+    color: rgb(255, 188, 62);
     
 }
 
@@ -425,6 +476,7 @@ h1 {
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
     z-index: 10;
+    
 }
 
 /* Declare heights because of positioning of img element */
@@ -562,6 +614,7 @@ img.responsive {
     /* letter-spacing: -1px; */
     font-weight: 800;
     text-transform: uppercase;
+    color: #000;
 }
 
 .features-block {
@@ -579,12 +632,10 @@ img.responsive {
 .features h2 {
     font-size: 20px;
     margin-top: 5px;
-    font-family: "PlayfairDisplay-ExtraBold";
+    font-family: "sora";
     color: rgb(0, 0, 0);
     text-align: center;
-    background: rgba(0, 0, 0, 0.118);
-    border-radius: 4px 4px 4px 4px;
-    padding: 1vw;
+    text-transform: uppercase;
 }
 
 .features-text-alone {
@@ -639,7 +690,7 @@ img.responsive {
 }
 
 .pricing-plan {
-    margin: 20px 30px 0 30px;
+    margin: 20px 15px 0 15px;
     border-radius: 4px;
     
 }
@@ -649,11 +700,11 @@ img.responsive {
 }
 
 .pricing-plan.Basic{
-    background:rgba(235, 224, 176, 0.31);
+    background:rgba(147, 147, 147, 0.31);
 }
 
 .pricing-plan.Premium {
-    background:rgba(226, 201, 93, 0.31);
+    background:rgba(106, 106, 106, 0.31);
 }
 
 .pricing-plan li {
@@ -679,11 +730,11 @@ li.pricing-desc {
 }
 
 li.pricing-title {
-    background: rgba(2, 2, 2, 0.974);
+    background: rgb(7, 7, 7);
     color: #ffffff;
-    padding: 10px;
+    padding: 4px;
     border-radius: 4px 4px 0 0;
-    font-size: 32px;
+    font-size: 24px;
     font-weight: 600;
     text-shadow: 
         2px 2px 4px rgb(0, 0, 0),
@@ -692,7 +743,7 @@ li.pricing-title {
 .testimonials {
     padding-top: 40px;
     padding-bottom: 60px;
-    background: linear-gradient(45deg, rgba(255, 255, 240, 0.7), rgb(235, 224, 176, 0.7),  rgb(210, 180, 140, 0.7), rgb(193, 154, 107, 0.7));
+    background: linear-gradient(45deg, rgba(255, 255, 240, 0.7), rgb(235, 224, 176, 0.7),  rgb(210, 180, 140, 0.7), rgba(248, 219, 182, 0.7));
 
     /* background-image: url('../img/avatar_all.png'); */
 }
@@ -725,6 +776,7 @@ li.pricing-title {
     border-color: #ffffff00;
     color: rgb(255, 255, 240);
     font-size: 14px;
+    font-family: 'sora';
     padding: 10px 20px;
     font-weight: 600;
     box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.527) !important;;
@@ -770,7 +822,7 @@ fieldset[disabled] .btn-primary.active {
 @media (min-width: 768px) {
     /* Navbar positioning foo */
     .col-sm-3 .black{
-        width: 10vw !important;
+        width: 14vh !important;
     }
 
     .navbar-wrapper {
@@ -799,6 +851,11 @@ fieldset[disabled] .btn-primary.active {
         line-height: 1.4;
     }
 
+    .carousel-caption {
+        left: 16vw;
+        
+    }
+
     .featurette-heading {
         font-size: 50px;
     }
@@ -813,7 +870,7 @@ fieldset[disabled] .btn-primary.active {
         height: 18vw;
     }
     .intro1{
-        height: 6vw;
+        height: 10vw;
     }
 
     .container {
@@ -835,7 +892,7 @@ fieldset[disabled] .btn-primary.active {
 
 @media (min-width: 1600px) and (max-width: 1800px){
     .intro1{
-        height: 10vw;
+        height: 8vw;
     }
 
     .container {
@@ -972,7 +1029,7 @@ fieldset[disabled] .btn-primary.active {
     .carousel-caption,
     .carousel-caption.blank {
         left: 5%;
-        top: 80px;
+        bottom: 80px;
     }
 
     .carousel-caption h1 {
@@ -984,7 +1041,7 @@ fieldset[disabled] .btn-primary.active {
     }
 
     .navbar-default {
-        background: linear-gradient(to top, rgba(231, 223, 186, 0.955), rgba(231, 223, 186, 0.977),  rgb(231, 223, 186)) no-repeat;
+        background: rgba(0, 0, 0, 0.825);
 
         padding: 15px 0;
     }
@@ -995,7 +1052,7 @@ fieldset[disabled] .btn-primary.active {
     }
 
     .navbar-default .nav li a {
-        color: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
     }
 
     .navbar-default .nav li a:hover {
@@ -1032,7 +1089,7 @@ fieldset[disabled] .btn-primary.active {
 
     .navbar-default .navbar-nav > .active > a,
     .navbar-default .navbar-nav > .active > a:hover {
-        color: rgb(128, 83, 0);
+        color: rgb(226, 147, 0);
     }
 
     .carousel-control,
@@ -1051,7 +1108,7 @@ fieldset[disabled] .btn-primary.active {
     }
     
     .header-back.two {
-        background: url('../img/mob3.JPG') center center no-repeat;
+        background: url('../img/MOB4.png') center center no-repeat;
         background-size: cover;
     }
 
@@ -1630,14 +1687,14 @@ fieldset[disabled] .btn-primary.active {
 }
 
 #header h1 {
-    font-family: 'EBGaramond-Bold';
+    font-family: 'libre';
     font-size: 3em;
     font-weight: 800;
     letter-spacing: 0.035em;
-    line-height: 1em;
+    padding: 1vh;
     text-align: left;
-    background: linear-gradient(to right, rgb(235, 224, 176), rgb(235, 224, 176), rgba(235, 224, 176, 0.59),rgba(235, 224, 176, 0.289));
-    -webkit-text-fill-color: rgba(28, 28, 28, 0.947);
+    background: linear-gradient(to right, rgb(255, 255, 255), rgb(255, 255, 255), rgba(255, 255, 255, 0.974),rgba(255, 255, 255, 0.432));
+    -webkit-text-fill-color: rgba(0, 0, 0, 0.947);
     /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5) */
 }
 
@@ -1646,9 +1703,9 @@ fieldset[disabled] .btn-primary.active {
     margin: 0.75em 0 0.25em 0;
     opacity: 1;
     color: #ffffff;
-    font-family: 'EBGaramond-Bold';
+    font-family: 'sora';
     text-align: left;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.926);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.926);
     /* -webkit-text-stroke: 1px rgba(0, 0, 0, 0.773); */
 }
 
