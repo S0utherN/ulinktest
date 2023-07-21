@@ -24,6 +24,8 @@
     src: url('../fonts/Roboto-Bold.ttf') format('truetype');
 }
 
+
+
 .single{
     width: 86% !important;
     float: none !important;
@@ -45,7 +47,7 @@
 }
 
 .contact{
-    height: 160vw;
+    height: 120vw;
 }
 
 .caricon{
@@ -148,7 +150,9 @@
 }
 
 .bottomc{
-    text-shadow: 1px 1px 2px #00000093;
+    text-align: center;
+    margin: 0 auto;
+
 }
 
 .intro1{
@@ -171,6 +175,7 @@
 
 .rightAL .smalltitle{
     font-size: 16px;
+    text-align: left;
 }
 
 .rightAL .price{
@@ -402,7 +407,8 @@ h1 {
 }
 
 .header-back.three {
-    background: url('../img/header_three.png') 50% 0 no-repeat;
+    background: url('../img/Security-Guards.jpg') center center no-repeat;
+    background-size: cover;
 }
 
 .header-back.four {
@@ -796,6 +802,10 @@ fieldset[disabled] .btn-primary.active {
     .featurette-heading {
         font-size: 50px;
     }
+
+    .rightAL{
+        font-size: 12px;
+    }
 }
 
 @media (min-width: 1800px) {
@@ -805,11 +815,47 @@ fieldset[disabled] .btn-primary.active {
     .intro1{
         height: 6vw;
     }
+
+    .container {
+        width: 1400px;
+    }
+
+    .pricing-plan li {
+        padding: 0 12px;
+    }
+
+    .rightAL{
+        font-size: 12px;
+    }
+
+    .page .rightAL{
+        padding: 0 3vw;
+    }
 }
 
 @media (min-width: 1600px) and (max-width: 1800px){
     .intro1{
         height: 10vw;
+    }
+
+    .container {
+        width: 1100px;
+    }
+
+    .pricing-plan li {
+        padding: 0 6vw;
+    }
+
+    .rightAL{
+        font-size: 12px;
+    }
+
+    .pricing-plan li {
+        padding: 0 2px;
+    }
+
+    .page .rightAL{
+        padding: 0 2vw;
     }
 }
 
@@ -827,6 +873,22 @@ fieldset[disabled] .btn-primary.active {
     .intro1{
         height: 10vw;
     }
+
+    .container {
+        width: 970px;
+    }
+
+    .pricing-plan li {
+        padding: 0 8px;
+    }
+
+    .rightAL{
+        font-size: 12px;
+    }
+
+    .page .rightAL{
+        padding: 0 2vw;
+    }
 }
 
 @media (min-width: 991px) and (max-width: 1200px) {
@@ -838,6 +900,10 @@ fieldset[disabled] .btn-primary.active {
     img.responsive {
         width: 120%;
         height: auto;
+    }
+
+    .pricing-plan li {
+        padding: 0 6vw;
     }
 }
 
