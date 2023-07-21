@@ -24,19 +24,29 @@
     src: url('../fonts/Roboto-Bold.ttf') format('truetype');
 }
 
-/* .background {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: -1;
-  } */
+.single{
+    width: 86% !important;
+    float: none !important;
+    margin: 0 auto ;
+}
 
-/* .flex{
-    display: flex; 
-    align-items: stretch;
-} */
+.d-block {
+    display: block!important;
+}
+
+.cbp-l-grid-mosaic-flat .cbp-caption-activeWrap {
+    background-color: #cecece !important;
+    background-color: rgba(196, 196, 196, 0.95) !important;
+}
+
+.testimonials p{
+    align-content: center;
+    text-align: center !important;
+}
+
+.contact{
+    height: 160vw;
+}
 
 .caricon{
     position: inherit;
@@ -46,6 +56,9 @@
 
 }
 
+.caricon img{
+    width: 6%;
+}
 .caricon a{
     color:rgb(45, 135, 37) !important;
 }
@@ -66,7 +79,7 @@
 
 .page{
     position: inherit;
-    margin-top: 10vw;
+    margin-top: 8vw;
 }
 
 .s1{
@@ -153,7 +166,7 @@
     display: flex;
     align-items: center;
     flex-basis: 100%;
-    margin-bottom: 10px;
+    margin-bottom: 17px;
     justify-content: space-between;
     font-family: "EBGaramond-Bold" !important;
 }
@@ -222,7 +235,7 @@ a.navy-link {
     text-transform: uppercase;
     color: rgba(35, 112, 28, 0.926);
     text-decoration: none;
-    text-shadow: 2px 2px 8px rgba(83, 83, 83, 0.601);
+    /* text-shadow: 2px 2px 8px rgba(83, 83, 83, 0.601); */
 }
 
 a.navy-link:hover {
@@ -231,7 +244,7 @@ a.navy-link:hover {
 
 section p {
     color: rgb(0, 0, 0);
-    font-size: 14px;
+    font-size: 15px;
     text-align: left;
     font-family: 'didot';
 }
@@ -249,8 +262,9 @@ h1 {
 .navy-line {
     width: 80px;
     height: 1px;
-    margin: 60px auto 0;
+    margin: 30px auto 0;
     border-bottom: 3px solid #262626d0;
+    position: relative;
 }
 
 /* CUSTOMIZE THE NAVBAR
@@ -783,6 +797,12 @@ fieldset[disabled] .btn-primary.active {
 
     .featurette-heading {
         font-size: 50px;
+    }
+}
+
+@media (min-width: 1800px) {
+    .intro2{
+        height: 18vw;
     }
 }
 

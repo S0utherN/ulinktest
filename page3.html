@@ -21,6 +21,11 @@
     <![endif]-->
         <!-- Custom styles for this template -->
         <link href="css/style.css" rel="stylesheet">
+        <link href="css/cubeportfolio.min.css" rel="stylesheet">
+        <link href="css/swiper.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/jquery.fancybox.min.css"/> 
+        <link rel="stylesheet" href="css/owl.carousel.min1.css"/> 
+        <link rel="stylesheet" href="css/owl.theme.default.min.css"/> 
         
         <script src="js/jquery-2.1.1.js"></script>
         <!-- <script src="js/pace.min.js" defer></script> -->
@@ -30,6 +35,15 @@
         <script src="js/wow.min.js"></script>
         <script src="js/inspinia.js"></script>
         <script src="js/particles.min.js"></script>
+        <script src="js/jquery.fancybox.min.js"></script>         
+        <script src="js/owl.carousel.min.js"></script>         
+        <script src="js/swiper.min.js"></script>         
+        <script src="js/jquery.cubeportfolio.min.js"></script>         
+        <script src="js/jquery.appear.js"></script>         
+        <script src="js/parallaxie.min.js"></script>         
+        <script src="js/wow.min.js"></script>   
+        <script src="js/owl.carousel.js"></script> 
+        <script src="js/script.js"></script>       
         <!-- <script src="js/jquery.scrollify.js"></script> -->
         <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.19/jquery.scrollify.min.js"></script> -->
     </head>
@@ -44,7 +58,11 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <img class="logo" src="img/logo.png" alt="Logo">
+                        <a href="index.html">
+                            <img class="logo" src="img/logo.png" alt="Logo">
+                          </a>
+                          
+                        
                     </div>
                     <div id="navbar" class="navbar-collapse collapse">
                         <ul class="nav navbar-nav navbar-right">
@@ -78,91 +96,205 @@
         </div>
         <div id="fullpage">
 
-            <section class="container features page"  id="pricing" >
-                <div class="row">
-                    <div class="col-lg-12 text-center">
-                        <div class="navy-line"></div>
-                        <h1> Travel Services<br/> <span class="navy"> </span> </h1>
-                        <!-- <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. </p> -->
-                    </div>
-                </div>
-                <div class="row bgblk">
-                    <div class="col-md-3 text-center wow fadeInLeft">
-                        <div>
-                            <!-- <i class="fa fa-mobile features-icon"></i>
-                            <h2>Full responsive</h2> -->
-                            <p>Premium features, advanced technology, and powerful performance. We also provide pricing details, specifying the rental rates for different periods. Plus, we highlight our expansive services that come with this rental, such as inclusive insurance, round-the-clock breakdown assistance, and continual customer support.</p>
-                        </div>
-                        <!-- <div class="m-t-lg">
-                            <i class="fa fa-bar-chart features-icon"></i>
-                            <h2>6 Charts Library</h2>
-                            <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus.</p>
-                        </div> -->
-                    </div>
-                    <div class="col-md-6 text-center  wow zoomIn">
-                        <img src="img/t1.jpg" alt="dashboard" class="img-responsive intro">
-                    </div>
-                    <!-- <div class="col-md-3 text-center wow fadeInRight">
-                        <div>
-                            <i class="fa fa-envelope features-icon"></i>
-                            <h2>Mail pages</h2>
-                            <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus.</p>
-                        </div>
-                        <div class="m-t-lg">
-                            <i class="fa fa-google features-icon"></i>
-                            <h2>AngularJS version</h2>
-                            <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus.</p>
-                        </div>
-                    </div> -->
-                </div>
-                <!-- <div class="row">
-                    <div class="col-lg-12 text-center">
-                        <div class="navy-line"></div>
-                        <h1>Discover great feautres</h1>
-                        <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. </p>
-                    </div>
-                </div>
-                <div class="row features-block">
-                    <div class="col-lg-6 features-text wow fadeInLeft">
-                        <small>INSPINIA</small>
-                        <h2>Perfectly designed </h2>
-                        <p>INSPINIA Admin Theme is a premium admin dashboard template with flat design concept. It is fully responsive admin dashboard template built with Bootstrap 3+ Framework, HTML5 and CSS3, Media query. It has a huge collection of reusable UI components and integrated with latest jQuery plugins.</p>
-                        <a href="" class="btn btn-primary">Learn more</a>
-                    </div>
-                    <div class="col-lg-6 text-right wow fadeInRight">
-                        <img src="img/dashboard.png" alt="dashboard" class="img-responsive pull-right">
-                    </div>
-                </div> -->
-            </section>
-
-            <!-- <section class="features">
+            <section class="pricing page">
                 <div class="container">
-                    <div class="row">
+                    <div class="row m-b-lg">
                         <div class="col-lg-12 text-center">
                             <div class="navy-line"></div>
-                            <h1>Even more great feautres</h1>
-                            <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. </p>
+                            <h1>Car Pricing</h1>
+                            <p>-All prices are subject to VAT.</p>
+                            <p>-45mins free waiting time for Airport and Seaport picking up and 15mins free waiting time for other car hire services. </p>
+
+                        </div>
+                        
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4 wow zoomIn single">
+                            <ul class="pricing-plan list-unstyled Basic">
+                                <li class="pricing-title">
+                                    MERCEDES JET CLASS</li>
+                                
+                                <!-- <img src="img/benz1.png" alt="dashboard" class="img-responsive intro1"> -->
+                                <img src="img/V.png" alt="dashboard"  class="img-responsive intro2">
+                                <div class="navy-line"></div>
+                                <li class="pricing-desc">Prices in <span>Central London</span></li>
+                                <li class="pricing-price rightAL">
+                                    <span class="smalltitle">Hourly Rate (min. 3 hrs)</span>
+                                    <span class="price">£60</span>
+                                </li>
+                                <li class="pricing-price rightAL">
+                                    <span class="smalltitle">Daily Hire (8 hrs)</span>
+                                    <span class="price">£480</span>
+                                </li>
+                                <li class="pricing-price rightAL">
+                                    <span class="smalltitle">Waiting & Extra per Hour</span>
+                                    <span class="price">£60</span>
+                                </li>
+                                <li class="pricing-price rightAL">
+                                    <span class="smalltitle">Extra per miles</span>
+                                    <span class="price">£3</span>
+                                </li>
+                                <div class="navy-line"></div>
+                                <li class="pricing-desc">Prices <span>Outside London</span> (M25)</li>
+                                <li class="pricing-price rightAL">
+                                    <span class="smalltitle">Hourly Rate (min. 3 hrs)</span>
+                                    <span class="price">£70</span>
+                                </li>
+                                <li class="pricing-price rightAL">
+                                    <span class="smalltitle">Daily Hire (8 hrs)</span>
+                                    <span class="price">£560</span>
+                                </li>
+                                <li class="pricing-price rightAL">
+                                    <span class="smalltitle">Waiting & Extra per Hour</span>
+                                    <span class="price">£70</span>
+                                </li>
+                                <li class="pricing-price rightAL">
+                                    <span class="smalltitle">Extra per miles</span>
+                                    <span class="price">£3</span>
+                                </li>
+                                
+                                <ul class="list-inline caricon">
+                                    <li>
+                                        <a><i class="fa fa-wifi"></i> Free Wi-Fi</a>
+                                    </li>
+                                    <li>
+                                        <a><i class="fa fa-battery-three-quarters"></i> Phone Charger</a>
+                                    </li>
+                                    <li>
+                                        <a><i class="fa fa-tint"></i> Free Water</a>
+                                    </li>
+                                    <br>
+                                    <br>
+                                    <li>
+                                        <a><img src="img/car-seat.png" alt="Logo"> x 6</a>
+                                    </li>
+                                </ul>
+                                <li class="plan-action">
+                                    <a class="btn btn-primary btn-xs page-scroll" href="#contact">Phone us for booking</a>
+                                </li>
+                            </ul>
+                        </div>                
+                    </div>
+                    
+                </div>
+            </section>
+
+            <section class="pricing page">
+                <div class="container">
+                    <div class="row m-b-lg">
+                        <div class="col-lg-12 text-center">
+                            <div class="navy-line"></div>
+                            <h1>Gallery</h1>
                         </div>
                     </div>
-                    <div class="row features-block">
-                        <div class="col-lg-3 features-text wow fadeInLeft">
-                            <small>INSPINIA</small>
-                            <h2>Perfectly designed </h2>
-                            <p>INSPINIA Admin Theme is a premium admin dashboard template with flat design concept. It is fully responsive admin dashboard template built with Bootstrap 3+ Framework, HTML5 and CSS3, Media query. It has a huge collection of reusable UI components and integrated with latest jQuery plugins.</p>
-                            <a href="" class="btn btn-primary">Learn more</a>
+
+                    <div class="row d-block">
+                        <div id="js-grid-mosaic-flat" class="cbp cbp-l-grid-mosaic-flat no-transition">
+                            
+                            <div class="cbp-item">
+                                <a href="img/jet.jpg" class="cbp-caption cbp-lightbox">
+                                    <div class="cbp-caption-defaultWrap"> 
+                                        <img src="img/jet.jpg" alt="work"/>
+                                    </div>
+                                    <div class="cbp-caption-activeWrap"> 
+                                        <div class="cbp-l-caption-alignCenter"> 
+                                            <div class="cbp-l-caption-body"> 
+                                                <div class="cbp-l-caption-title">Zoom out</div>
+                                                <span class="work-icon"> <i class="fa fa-arrow-right"></i>
+                                                </span> 
+                                            </div>                                         
+                                        </div>                                     
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="cbp-item">
+                                <a href="img/perspective.png" class="cbp-caption cbp-lightbox">
+                                    <div class="cbp-caption-defaultWrap"> 
+                                        <img src="img/perspective.png" alt="work"/>
+                                    </div>
+                                    <div class="cbp-caption-activeWrap"> 
+                                        <div class="cbp-l-caption-alignCenter"> 
+                                            <div class="cbp-l-caption-body"> 
+                                                <div class="cbp-l-caption-title">Zoom out</div>
+                                                <span class="work-icon"> <i class="fa fa-arrow-right"></i>
+                                                </span> 
+                                            </div>                                         
+                                        </div>                                     
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="cbp-item">
+                                <a href="img/mob1.jpg" class="cbp-caption cbp-lightbox">
+                                    <div class="cbp-caption-defaultWrap"> 
+                                        <img src="img/mob1.jpg" alt="work"/>
+                                    </div>
+                                    <div class="cbp-caption-activeWrap"> 
+                                        <div class="cbp-l-caption-alignCenter"> 
+                                            <div class="cbp-l-caption-body"> 
+                                                <div class="cbp-l-caption-title">Zoom out</div>
+                                                <span class="work-icon"> <i class="fa fa-arrow-right"></i>
+                                                </span> 
+                                            </div>                                         
+                                        </div>                                     
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="cbp-item">
+                                <a href="img/mob2.png" class="cbp-caption cbp-lightbox">
+                                    <div class="cbp-caption-defaultWrap"> 
+                                        <img src="img/mob2.png" alt="work"/>
+                                    </div>
+                                    <div class="cbp-caption-activeWrap"> 
+                                        <div class="cbp-l-caption-alignCenter"> 
+                                            <div class="cbp-l-caption-body"> 
+                                                <div class="cbp-l-caption-title">Zoom out</div>
+                                                <span class="work-icon"> <i class="fa fa-arrow-right"></i>
+                                                </span> 
+                                            </div>                                         
+                                        </div>                                     
+                                    </div>
+                                </a>
+                            </div>
+                            
                         </div>
-                        <div class="col-lg-6 text-right m-t-n-lg wow zoomIn">
-                            <img src="img/iphone.jpg" class="img-responsive" alt="dashboard">
+                    </div>
+                </div>    
+            </section>
+
+            <section  class="navy-section testimonials">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 text-center wow zoomIn">
+                            <i class="fa fa-file-text big-icon"></i>
+                            <h1>
+                                Cancellations </h1>
+                            <div class="testimonials-text">
+                                <i>Please check our Cancellations terms</i>
+                            </div>
+                            <p><a class="navy-link terms" href="cancellation.html" role="button">Details &raquo;</a></p>
                         </div>
-                        <div class="col-lg-3 features-text text-right wow fadeInRight">
-                            <small>INSPINIA</small>
-                            <h2>Perfectly designed </h2>
-                            <p>INSPINIA Admin Theme is a premium admin dashboard template with flat design concept. It is fully responsive admin dashboard template built with Bootstrap 3+ Framework, HTML5 and CSS3, Media query. It has a huge collection of reusable UI components and integrated with latest jQuery plugins.</p>
-                            <a href="" class="btn btn-primary">Learn more</a>
+                        <br>
+                        <div class="col-lg-12 text-center wow zoomIn">
+                            <h1>
+                                TERMS AND CONDITIONS </h1>
+                            <div class="testimonials-text">
+                                <i>Please check our terms and conditions</i>
+                            </div>
+                            <p><a class="navy-link terms" href="terms.html" role="button">Details &raquo;</a></p>
+                        </div>
+                        <br>
+                        <div class="col-lg-12 text-center wow zoomIn">
+                            <h1>
+                                Privacy </h1>
+                            <div class="testimonials-text">
+                                <i>Please check our Privacy terms</i>
+                            </div>
+                            <p><a class="navy-link terms" href="privacy.html" role="button">Details &raquo;</a></p>
                         </div>
                     </div>
                 </div>
-            </section> -->        
+            </section>
+            
 
             <section id="contact" class="gray-section contact">
                 <div class="container">
@@ -170,36 +302,18 @@
                         <div class="col-lg-12 text-center">
                             <div class="navy-line"></div>
                             <h1>Contact Us</h1>
-                            <p>待定</p>
                         </div>
                     </div>
                     <div class="row m-b-lg bottomc">
                         <div class="col-lg-3 col-lg-offset-3">
-                            <address> <strong><span class="navy">ULINK</span></strong><br/>
-                        待定<br/>
-                        待定<br/> <abbr title="Phone">P:</abbr> (123) 456-7890 </address>
+                            <address  style="text-align: center;"> <strong><span class="navy">ULINK</span></strong><br/>
+                                <i class="fa fa-phone" aria-hidden="true"></i> (+44) 07725 050309 </address>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-lg-12 text-center">
-                            <p class="m-t-sm">
-                        Or follow us on social platform </p>
-                            <ul class="list-inline social-icon">
-                                <li>
-                                    <a href="#"><i class="fa fa-twitter"></i></a>
-                                </li>
-                                <li>
-                                    <a href="#"><i class="fa fa-facebook"></i></a>
-                                </li>
-                                <li>
-                                    <a href="#"><i class="fa fa-linkedin"></i></a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+                    
                     <div class="row">
                         <div class="col-lg-8 col-lg-offset-2 text-center m-t-lg m-b-lg">
-                            <p><strong>&copy; 2023 ULINK</strong></p>
+                            <p  style="text-align: center;"><strong>&copy; 2023 ULINK</strong></p>
                         </div>
                     </div>
                 </div>
