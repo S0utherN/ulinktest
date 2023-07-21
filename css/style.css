@@ -79,7 +79,7 @@
 
 .page{
     position: inherit;
-    margin-top: 8vw;
+    margin-top: 2vw;
 }
 
 .s1{
@@ -152,14 +152,12 @@
 }
 
 .intro1{
-    display: flexbox;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    flex-grow: 1;
-    height: 19vw;
-    top: 35%;
-    left: 15%;
-    position: inherit;
+    height: 30vw;
+    align-items: center;
+    margin: 0 auto;
+    /* top: 60%; */
+    /* left: 15%; */
+    position: relative;
 }
 
 .rightAL{
@@ -804,6 +802,15 @@ fieldset[disabled] .btn-primary.active {
     .intro2{
         height: 18vw;
     }
+    .intro1{
+        height: 6vw;
+    }
+}
+
+@media (min-width: 1600px) and (max-width: 1800px){
+    .intro1{
+        height: 10vw;
+    }
 }
 
 @media (min-width: 1200px) and (max-width: 1600px) {
@@ -815,6 +822,10 @@ fieldset[disabled] .btn-primary.active {
     img.responsive {
         width: 180%;
         height: auto;
+    }
+
+    .intro1{
+        height: 10vw;
     }
 }
 
