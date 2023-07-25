@@ -1064,7 +1064,7 @@ fieldset[disabled] .btn-primary.active {
     }
 
     .navbar-default .nav li a:hover {
-        color: rgb(59, 152, 28);
+        color: rgb(255, 108, 253);
     }
 
     .navbar-wrapper .navbar {
@@ -1097,7 +1097,7 @@ fieldset[disabled] .btn-primary.active {
 
     .navbar-default .navbar-nav > .active > a,
     .navbar-default .navbar-nav > .active > a:hover {
-        color: rgb(226, 147, 0);
+        color: rgb(227, 158, 255);
     }
 
     .carousel-control,
