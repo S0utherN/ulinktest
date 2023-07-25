@@ -21,22 +21,40 @@
     <![endif]-->
         <!-- Custom styles for this template -->
         <link href="css/style.css" rel="stylesheet">
+        <link href="css/cubeportfolio.min.css" rel="stylesheet">
+        <link href="css/swiper.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/jquery.fancybox.min.css"/> 
+        <link rel="stylesheet" href="css/owl.carousel.min1.css"/> 
+        <link rel="stylesheet" href="css/owl.theme.default.min.css"/> 
+        <!-- <link rel="stylesheet" href="css/bootstrap.css"/>  -->
         
         <script src="js/jquery-2.1.1.js"></script>
-        <!-- <script src="js/pace.min.js" defer></script> -->
-        <script src="js/bootstrap.min.js" defer></script>
-        <script src="js/classie.js" defer></script>
+        <script src="js/pace.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/classie.js"></script>
         <script src="js/cbpAnimatedHeader.js"></script>
         <script src="js/wow.min.js"></script>
-        <script src="js/inspinia.js"></script>
-        <script src="js/particles.min.js"></script>
+        <script src="js/inspinia.js"></script> 
+        <script src="js/jquery.fancybox.min.js"></script>
+        <script src="js/owl.carousel.min.js"></script> 
+        <script src="js/jquery.cubeportfolio.min.js"></script>         
+        <script src="js/jquery.appear.js"></script>   
+        <script src="js/parallaxie.min.js"></script>
+        <script src="js/owl.carousel.js"></script>
+        <script src="js/script.js"></script>
+        <!-- <script src="js/main.js"></script> -->
+        <!-- <script src="js/smoothscroll.js"></script> -->
         <!-- <script src="js/jquery.scrollify.js"></script> -->
         <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.19/jquery.scrollify.min.js"></script> -->
     </head>
-    <body id="page-top">
+    <body id="page-top" >
+
+       
         <div class="navbar-wrapper">
-            <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+            
+            <nav class="navbar navbar-default navbar-fixed-top menu" role="navigation" id="theMenu">
                 <div class="container">
+                    
                     <div class="navbar-header page-scroll">
                         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
                             <span class="sr-only">Toggle navigation</span>
@@ -45,41 +63,45 @@
                             <span class="icon-bar"></span>
                         </button>
                         <a href="index.html">
-                            <img class="logo" src="img/logo.png" alt="Logo">
-                          </a>
+                            <img class="logo" src="img/logoold.png" alt="Logo">
+                        </a>
                     </div>
+                    
                     <div id="navbar" class="navbar-collapse collapse">
                         <ul class="nav navbar-nav navbar-right">
                             <li>
                                 <a class="page-scroll" href="#page-top">Home</a>
                             </li>
-
                             <li>
                                 <a class="page-scroll" href="#pricing">Chauffeur services</a>
+                            </li>
+                            <li>
+                                <a class="page-scroll" href="#testimonials">Close Protection Services</a>
                             </li>
                             <li>
                                 <a class="page-scroll" href="#features">Tourism Service</a>
                             </li>
                             <li>
-                                <a class="page-scroll" href="#testimonials">Security services</a>
+                                <a class="page-scroll" href="#contact">Privacy</a>
                             </li>
-                            
-                            
-                            <!-- <li>
-                                <a class="page-scroll" href="#team">Team</a>
-                            </li> -->
-                            <!-- <li>
-                                <a class="page-scroll" href="#testimonials">Testimonials</a>
-                            </li> -->
                             <li>
-                                <a class="page-scroll" href="#contact">Contact</a>
+                                <a class="page-scroll" href="#contact">Terms and conditions</a>
+                            </li>
+                            <li>
+                                <a class="page-scroll" href="#contact">Cancellations terms</a>
                             </li>
                         </ul>
                     </div>
+                    
                 </div>
                 <div class="navy-line black"></div>
             </nav>
+
         </div>
+        
+
+
+
         <div id="fullpage">
 
             <div id="stage-1">
@@ -134,7 +156,7 @@
                                 <div class="carousel-caption s1">
                                     <header id="header">
                                         <h1>
-                                            personalized security service<br/> </h1>
+                                            Close Protection Services<br/> </h1>
                                         <p>ensuring your safety and peace of mind during your travels</p>
                                         <p>
                                             <a class="btn btn-lg btn-primary page-scroll" href="#testimonials" role="button">READ MORE</a>
@@ -162,11 +184,9 @@
                 </div>
                 <div class="row">
                     <div class="col-md-3 text-center wow fadeInLeft">
-                        <div>
                             <!-- <i class="fa fa-mobile features-icon"></i>
                             <h2>Full responsive</h2> -->
-                            <p>Premium features, advanced technology, and powerful performance. We also provide pricing details.</p>
-                        </div>
+                        <p>ULINK is a London based chauffeuring company. We are dedicated to providing the highest level of service to our clients. We understand that when you choose us as your transport provider, you expect professionalism, reliability, and an exceptional experience. That is the reason we make it our mission to exceed your expectations every time.</p>
                         <!-- <div class="m-t-lg">
                             <i class="fa fa-bar-chart features-icon"></i>
                             <h2>6 Charts Library</h2>
@@ -176,18 +196,9 @@
                     <div class="col-md-6 text-center  wow zoomIn">
                         <img src="img/t1.jpg" alt="dashboard" class="img-responsive intro">
                     </div>
-                    <!-- <div class="col-md-3 text-center wow fadeInRight">
-                        <div>
-                            <i class="fa fa-envelope features-icon"></i>
-                            <h2>Mail pages</h2>
-                            <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus.</p>
-                        </div>
-                        <div class="m-t-lg">
-                            <i class="fa fa-google features-icon"></i>
-                            <h2>AngularJS version</h2>
-                            <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus.</p>
-                        </div>
-                    </div> -->
+                    <div class="col-md-3 text-center wow fadeInRight">
+                        <p>We offer a wide range of luxury vehicles, including Mercedes-Benz S class, V class and Jet V class, to suit your specific needs. Whether you're looking for transport for a business meeting, a special event, or just a night out on the town, we have got you covered.</p>
+                    </div>
                 </div>
                 <!-- <div class="row">
                     <div class="col-lg-12 text-center">
@@ -215,9 +226,9 @@
                         <div class="col-lg-12 text-center">
                             <div class="navy-line"></div>
                             <h1>Car Pricing</h1>
-                            <p>-All prices are subject to VAT.</p>
-                            <p>-45mins free waiting time for Airport and Seaport picking up and 15mins free waiting time for other car hire services. </p>
-
+                            <p>- All prices are subject to VAT.</p>
+                            <p>- 45mins free waiting time for Airport and Seaport picking up and 15mins free waiting time for other car hire services. </p>
+                            <p>- This rate includes up to 100 mil in Central London.</p>
                         </div>
                         
                     </div>
@@ -232,6 +243,7 @@
                                     MERCEDES V-CLASS</li>
                                 
                                 <!-- <img src="img/benz1.png" alt="dashboard" class="img-responsive intro1"> -->
+                                <img src="img/vc.png" alt="dashboard"  class="img-responsive intro2">
                                 <img src="img/V.png" alt="dashboard"  class="img-responsive intro2">
                                 <div class="navy-line"></div>
                                 <li class="pricing-desc">Prices in <span>Central London</span></li>
@@ -269,16 +281,25 @@
                                     <span class="smalltitle">Extra per miles</span>
                                     <span class="price">£3</span>
                                 </li>
-                                
+
                                 <ul class="list-inline caricon">
                                     <li>
-                                        <a><i class="fa fa-wifi"></i> Free Wi-Fi</a>
+                                        <a><i class="fa fa-wifi"></i> Free Wi-Fi </a>
                                     </li>
+                                    <br>
+                                    <br>
                                     <li>
-                                        <a><i class="fa fa-battery-three-quarters"></i> Phone Charger</a>
+                                        <a><i class="fa fa-battery-three-quarters"></i> Phone Charger </a>
                                     </li>
+                                    <br>
+                                    <br>
                                     <li>
                                         <a><i class="fa fa-tint"></i> Free Water</a>
+                                    </li>
+                                    <br>
+                                    <br>
+                                    <li>
+                                        <a><i class="fa fa-suitcase"></i> x 7</a>
                                     </li>
                                     <br>
                                     <br>
@@ -297,27 +318,10 @@
                                     MERCEDES S-CLASS</li>
                                 
                                 <!-- <img src="img/benz1.png" alt="dashboard" class="img-responsive intro1"> -->
+                                <img src="img/iris.png" alt="dashboard"  class="img-responsive intro2">
                                 <img src="img/S.png" alt="dashboard"  class="img-responsive intro2">
                                 <div class="navy-line"></div>
                                 <li class="pricing-desc">Prices in <span>Central London</span></li>
-                                <li class="pricing-price rightAL">
-                                    <span class="smalltitle">Hourly Rate (min. 3 hrs)</span>
-                                    <span class="price">£60</span>
-                                </li>
-                                <li class="pricing-price rightAL">
-                                    <span class="smalltitle">Daily Hire (8 hrs)</span>
-                                    <span class="price">£480</span>
-                                </li>
-                                <li class="pricing-price rightAL">
-                                    <span class="smalltitle">Waiting & Extra per Hour</span>
-                                    <span class="price">£60</span>
-                                </li>
-                                <li class="pricing-price rightAL">
-                                    <span class="smalltitle">Extra per miles</span>
-                                    <span class="price">£3</span>
-                                </li>
-                                <div class="navy-line"></div>
-                                <li class="pricing-desc">Prices <span>Outside London</span> (M25)</li>
                                 <li class="pricing-price rightAL">
                                     <span class="smalltitle">Hourly Rate (min. 3 hrs)</span>
                                     <span class="price">£70</span>
@@ -332,18 +336,43 @@
                                 </li>
                                 <li class="pricing-price rightAL">
                                     <span class="smalltitle">Extra per miles</span>
-                                    <span class="price">£3</span>
+                                    <span class="price">£4</span>
+                                </li>
+                                <div class="navy-line"></div>
+                                <li class="pricing-desc">Prices <span>Outside London</span> (M25)</li>
+                                <li class="pricing-price rightAL">
+                                    <span class="smalltitle">Hourly Rate (min. 3 hrs)</span>
+                                    <span class="price">£80</span>
+                                </li>
+                                <li class="pricing-price rightAL">
+                                    <span class="smalltitle">Daily Hire (8 hrs)</span>
+                                    <span class="price">£640</span>
+                                </li>
+                                <li class="pricing-price rightAL">
+                                    <span class="smalltitle">Waiting & Extra per Hour</span>
+                                    <span class="price">£80</span>
+                                </li>
+                                <li class="pricing-price rightAL">
+                                    <span class="smalltitle">Extra per miles</span>
+                                    <span class="price">£4</span>
                                 </li>
                                 
                                 <ul class="list-inline caricon">
                                     <li>
                                         <a><i class="fa fa-wifi"></i> Free Wi-Fi</a>
                                     </li>
+                                    <br><br>
                                     <li>
                                         <a><i class="fa fa-battery-three-quarters"></i> Phone Charger</a>
                                     </li>
+                                    <br><br>
                                     <li>
                                         <a><i class="fa fa-tint"></i> Free Water</a>
+                                    </li>
+                                    <br>
+                                    <br>
+                                    <li>
+                                        <a><i class="fa fa-suitcase"></i> x 3</a>
                                     </li>
                                     <br>
                                     <br>
@@ -352,7 +381,7 @@
                                     </li>
                                 </ul>
                                 <li class="plan-action">
-                                    <a class="btn btn-primary btn-xs page-scroll" href="page1.html">Learn more</a>
+                                    <a class="btn btn-primary btn-xs page-scroll" href="page2.html">Learn more</a>
                                 </li>
                             </ul>
                         </div>
@@ -392,6 +421,8 @@
                 </div>
             </section> -->        
 
+
+            
             <section id="features" class="container services">
                 <div class="row">
                     <div class="col-lg-12 text-center">
@@ -404,7 +435,26 @@
                     <div class="col-sm-3">
                         <div class="navy-line black"></div>
                         <h2>Windsor and Oxford day tour</h2>
-                        <img src="img/casttle.jpg" alt="dashboard" class="img-responsive">
+
+                        <div id="js-grid-mosaic-flat" class="cbp cbp-l-grid-mosaic-flat no-transition">
+                            <div class="cbp-item">
+                                <a href="pending.html" class="cbp-caption ">
+                                    <div class="cbp-caption-defaultWrap"> 
+                                        <img src="img/casttle.jpg" alt="work"/>
+                                    </div>
+                                    <div class="cbp-caption-activeWrap"> 
+                                        <div class="cbp-l-caption-alignCenter"> 
+                                            <div class="cbp-l-caption-body"> 
+                                                <div class="cbp-l-caption-title">Learn more</div>
+                                                <span class="work-icon"> <i class="fa fa-arrow-right"></i>
+                                                </span> 
+                                            </div>                                         
+                                        </div>                                     
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- <img src="img/casttle.jpg" alt="dashboard" class="img-responsive"> -->
                         <p>Enjoy our Windsor and Oxford day tour, where you can experience the rich history and breathtaking sights of these iconic British locales. Our tour provides comfortable transportation and knowledgeable guides to enhance your experience.</p>
                         <p><a class="navy-link" href="pending.html" role="button">Details &raquo;</a></p>
                     </div>
@@ -445,7 +495,7 @@
                     <div class="row">
                         <div class="col-lg-12 text-center">
                             <div class="navy-line"></div>
-                            <h1>Security Service</h1>
+                            <h1>Close Protection Services</h1>
                             <p>Introduction, price, service details </p>
                         </div>
                     </div>
@@ -460,8 +510,8 @@
                                 
                                 <li class="pricing-title">
                                     Single</li>
-                                <li class="pricing-desc">
-                                    Lorem ipsum dolor sit amet, illum fastidii dissentias quo ne. Sea ne sint animal iisque, nam an soluta sensibus.</li>
+                                <!-- <li class="pricing-desc">
+                                    .</li> -->
                                 <li class="pricing-price">
                                     <span>$16</span> / month
                                 </li>
@@ -490,8 +540,8 @@
                             <ul class="pricing-plan list-unstyled Basic">
                                 <li class="pricing-title">
                                     Multi</li>
-                                <li class="pricing-desc">
-                                    Lorem ipsum dolor sit amet, illum fastidii dissentias quo ne. Sea ne sint animal iisque, nam an soluta sensibus.</li>
+                                <!-- <li class="pricing-desc">
+                                    Lorem ipsum dolor sit amet, illum fastidii dissentias quo ne. Sea ne sint animal iisque, nam an soluta sensibus.</li> -->
                                 <li class="pricing-price">
                                     <span>$16</span> / month
                                 </li>
@@ -555,11 +605,10 @@
                         <div class="col-lg-12 text-center wow zoomIn disable">
                             <i class="fa fa-comment big-icon"></i>
                             <h1>
-                        公司介绍 </h1>
+                        Our Company </h1>
                             <div class="testimonials-text">
-                                <i>"Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like)."</i>
+                                <i>"Our highly trained and experienced chauffeur team is committed to providing you with a safe, comfortable, and stress-free journey. We pride ourselves on our attention to details, and we go above and beyond to ensure that every aspect of your ride is flawless. From the moment you book with us to the moment we arrive at your destination, we will take care of everything."</i>
                             </div>
-                            <small> <strong>12.02.2014 - Andy Smith</strong> </small>
                         </div>
                     </div>
                 </div>

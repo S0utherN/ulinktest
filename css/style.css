@@ -40,7 +40,14 @@
     src: url('../fonts/LibreBaskerville-Bold.ttf') format('truetype');
 }
 
+.caricon .fa{
+    text-align: left !important;
+}
 
+.fa{
+    padding-right: 20px;
+    font-size: 30px;
+}
 
 .disable h1{
     background: none !important;
@@ -74,7 +81,7 @@
 }
 
 .single{
-    width: 86% !important;
+    width: 90% !important;
     float: none !important;
     margin: 0 auto ;
 }
@@ -106,10 +113,11 @@
 }
 
 .caricon img{
-    width: 6%;
+    width: 8%;
 }
 .caricon a{
-    color:rgb(45, 135, 37) !important;
+    color:rgb(0, 0, 0) !important;
+    font-size: 20px;
 }
 
 .text-center{
@@ -136,8 +144,8 @@
 }
 
 .s2 #header h1{
-    -webkit-text-fill-color: rgba(255, 255, 255, 0.947);
-    background: linear-gradient(to right, rgb(0, 0, 0), rgb(0, 0, 0), rgba(0, 0, 0, 0.974),rgba(0, 0, 0, 0.432)) !important;
+    -webkit-text-fill-color: rgba(0, 0, 0, 0.947);;
+    background: linear-gradient(to right, rgb(255, 255, 255), rgb(255, 255, 255), rgba(255, 255, 255, 0.974),rgba(255, 255, 255, 0.432));
 }
 
 .s2 #header p{
@@ -452,13 +460,13 @@ h1 {
     background-size: cover;
 }
 
-.header-back.two {
-    background: url('../img/header_two.jpg') center center no-repeat;
+.header-back.three {
+    background: url('../img/protection.jpg') center center no-repeat;
     background-size: cover;
 }
 
-.header-back.three {
-    background: url('../img/Security-Guards.jpg') center center no-repeat;
+.header-back.two {
+    background: url('../img/bg4.jpg') center center no-repeat;
     background-size: cover;
 }
 
@@ -825,6 +833,10 @@ fieldset[disabled] .btn-primary.active {
         width: 14vh !important;
     }
 
+    /* .navbar-toggle {
+        display: contents !important;
+    } */
+
     .navbar-wrapper {
         margin-top: 20px;
     }
@@ -878,7 +890,7 @@ fieldset[disabled] .btn-primary.active {
     }
 
     .pricing-plan li {
-        padding: 0 12px;
+        padding: 0 8vw;
     }
 
     .rightAL{
@@ -907,10 +919,6 @@ fieldset[disabled] .btn-primary.active {
         font-size: 12px;
     }
 
-    .pricing-plan li {
-        padding: 0 2px;
-    }
-
     .page .rightAL{
         padding: 0 2vw;
     }
@@ -936,7 +944,7 @@ fieldset[disabled] .btn-primary.active {
     }
 
     .pricing-plan li {
-        padding: 0 8px;
+        padding: 0 6vw;
     }
 
     .rightAL{
@@ -1102,18 +1110,18 @@ fieldset[disabled] .btn-primary.active {
         width:40px;
     }
 
-    .header-back.one {
-        background: url('../img/mob1.jpg') center center no-repeat;
+    .header-back.two {
+        background: url('../img/fengmian.jpg') center center no-repeat;
         background-size: cover;
     }
     
-    .header-back.two {
+    .header-back.three {
         background: url('../img/MOB4.png') center center no-repeat;
         background-size: cover;
     }
 
-    .header-back.three {
-        background: url('../img/mob2.png') center center no-repeat;
+    .header-back.one {
+        background: url('../img/fmian2.jpg') center center no-repeat;
         background-size: cover;
     }
 }
