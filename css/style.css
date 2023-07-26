@@ -505,17 +505,17 @@ h1 {
 
 }
 
-.header-back.one {
-    background: url('../img/header_one.jpg') center center no-repeat;
+.header-back.two {
+    background: url('../img/londonnight.jpg') center center no-repeat;
     background-size: cover;
 }
 
 .header-back.three {
-    background: url('../img/protection.jpg') center center no-repeat;
+    background: url('../img/protectionbg.jpg') center center no-repeat;
     background-size: cover;
 }
 
-.header-back.two {
+.header-back.one {
     background: url('../img/bg4.jpg') center center no-repeat;
     background-size: cover;
 }
