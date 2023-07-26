@@ -40,6 +40,10 @@
     src: url('../fonts/LibreBaskerville-Bold.ttf') format('truetype');
 }
 
+.col-lg-offset-3{
+    margin-left: none !important;
+}
+
 .img-circle{
     width: 16vh !important;
 }
@@ -180,6 +184,7 @@
 
 .text-center{
     padding: 0 30px;
+    float: ;
 }
 
 
@@ -361,7 +366,7 @@ section p {
 }
 
 address {
-    font-size: 13px;
+    font-size: 23px;
 }
 
 h1 {
