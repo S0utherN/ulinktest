@@ -48,6 +48,11 @@
     width: 16vh !important;
 }
 
+.page-center{
+    float: none !important;
+    margin: 0 auto !important;
+}
+
 .page-pricing{
     width: 50% !important;
     float: none !important;
@@ -184,7 +189,6 @@
 
 .text-center{
     padding: 0 30px;
-    float: ;
 }
 
 
