@@ -40,6 +40,43 @@
     src: url('../fonts/LibreBaskerville-Bold.ttf') format('truetype');
 }
 
+.cbp-item{
+    /* width: 275px !important; */
+}
+
+.page-pricing{
+    width: 50% !important;
+    float: none !important;
+    margin: 0 auto !important;
+}
+
+.dropdown-menu{
+    /* font-size: 4em !important; */
+    left: 0 !important;
+    margin-top: 0 !important;
+    min-width: 260px !important;
+    border: none !important;
+    text-align: center !important;
+    background-color: rgba(64, 64, 64, 0.697) !important;
+}
+
+.dropdown-item{
+    color: #ffffff !important;
+    text-align: center !important;
+}
+
+@media (min-width: 768px) {
+    .dropdown:hover>.dropdown-menu {
+        display: block !important;
+    }
+}
+  
+@media (max-width: 767px) {
+    .dropdown:hover>.dropdown-menu {
+        display: none !important;
+    }
+}
+
 .col-lg-5{
     width: 100% !important;
 }
@@ -64,7 +101,7 @@
 .sub{
     font-size: 11px !important;
     border-top: 0 !important;
-    padding: 10px 10px !important;
+    padding: 6px 30px !important;
 }
 
 .caricon .fa{
@@ -387,7 +424,7 @@ h1 {
 
 .navbar-nav > li > a {
     padding-top: 25px;
-    border-top: 6px solid transparent;
+    border-top: 3px solid transparent;
 }
 
 .navbar-default .navbar-nav > .active > a,
@@ -465,6 +502,11 @@ h1 {
 .header-back {
     height: 100vh;
     width: 100%;
+    background-attachment: scroll !important;
+    position: fixed !important;
+    top: 0;
+    left: 0;
+
 }
 
 .header-back.one {
@@ -502,7 +544,6 @@ h1 {
 /* Declare heights because of positioning of img element */
 .carousel .item {
     height: 470px;
-    background-color: #777;
 }
 
 .carousel-inner > .item > img {
@@ -1011,7 +1052,7 @@ fieldset[disabled] .btn-primary.active {
     }
 
     .mytoggle{
-        display: none;
+        display: none !important;
     }
 
     .single{
@@ -1118,7 +1159,7 @@ fieldset[disabled] .btn-primary.active {
     }
 
     .navbar-nav > li > a {
-        padding: 20px 10px;
+        padding: 14px 10px;
     }
 
     .navbar .navbar-brand {
