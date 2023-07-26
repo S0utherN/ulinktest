@@ -40,13 +40,23 @@
     src: url('../fonts/LibreBaskerville-Bold.ttf') format('truetype');
 }
 
+.page-scroll{
+    font-size: 16px !important;
+    text-transform: none !important;
+}
+
+.sub{
+    font-size: 11px !important;
+    border-top: 0 !important;
+    padding: 10px 10px !important;
+}
+
 .caricon .fa{
     text-align: left !important;
 }
 
-.fa{
-    padding-right: 20px;
-    font-size: 30px;
+.caricon li{
+    padding: 0 4px !important;
 }
 
 .disable h1{
@@ -107,17 +117,18 @@
 .caricon{
     position: inherit;
     text-align: center;
-    padding: 16px;
+    padding: 4px;
    font-family: "4";
 
 }
 
 .caricon img{
-    width: 8%;
+    width: 3vh;
+    padding-left: 10px;
 }
 .caricon a{
     color:rgb(0, 0, 0) !important;
-    font-size: 20px;
+    font-size: 14px;
 }
 
 .text-center{
@@ -381,12 +392,12 @@ h1 {
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover {
     background: transparent;
-    color: rgb(255, 188, 62);
+    color: rgb(227, 158, 255);
     
 }
 
 .navbar-default .navbar-nav > li > a:hover {
-    color: rgb(59, 152, 28);
+    color: rgb(255, 108, 253);
 }
 
 .navbar-default .navbar-nav > .active > a:focus {
@@ -422,7 +433,7 @@ h1 {
 }
 
 .navbar-scroll.navbar-default .nav li a:hover {
-    color: #ffe72e;
+    color: rgb(255, 108, 253);
 }
 
 .navbar-wrapper .navbar.navbar-scroll {
@@ -618,7 +629,7 @@ img.responsive {
 }
 
 .services h2 {
-    font-size: 20px;
+    font-size: 24px;
     /* letter-spacing: -1px; */
     font-weight: 800;
     text-transform: uppercase;
@@ -689,7 +700,7 @@ img.responsive {
 }
 
 .social-icon a:hover {
-    background: #17a185;
+    color: rgb(255, 108, 253);
 }
 
 .img-small {
