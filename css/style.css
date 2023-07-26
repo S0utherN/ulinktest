@@ -779,11 +779,12 @@ img.responsive {
 }
 
 li.pricing-desc {
-    font-size: 20px;
+    font-size: 16px;
     color: #000000 !important;
     border-top: none;
     padding: 10px 16px ;
     text-align: center;
+    font-family: 'sorare';
 }
 
 li.pricing-title {
