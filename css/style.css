@@ -40,10 +40,6 @@
     src: url('../fonts/LibreBaskerville-Bold.ttf') format('truetype');
 }
 
-.cbp-item{
-    /* width: 275px !important; */
-}
-
 .page-pricing{
     width: 50% !important;
     float: none !important;
