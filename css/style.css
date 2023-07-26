@@ -40,6 +40,22 @@
     src: url('../fonts/LibreBaskerville-Bold.ttf') format('truetype');
 }
 
+.col-lg-5{
+    width: 100% !important;
+}
+
+.col-md-6{
+    margin: 0 auto !important;
+}
+
+.mycollapse{
+    display:block!important;
+    height:auto!important;
+    padding-bottom:0;
+    overflow:visible!important;
+    visibility:visible!important;
+}
+
 .page-scroll{
     font-size: 16px !important;
     text-transform: none !important;
@@ -88,12 +104,6 @@
     border-radius: 4px 4px 4px 4px; */
     padding: 2vh;
     margin-bottom: 2vh;
-}
-
-.single{
-    width: 90% !important;
-    float: none !important;
-    margin: 0 auto ;
 }
 
 .d-block {
@@ -166,15 +176,6 @@
 .bgblk{
     background-color: #00000020 !important;
     border-radius: 6px 6px 6px 6px;
-}
-
-.intro2{
-    height: 30vw;
-    align-items: center;
-    margin: 0 auto;
-    /* top: 60%; */
-    /* left: 15%; */
-    position: relative;
 }
 
 
@@ -844,9 +845,13 @@ fieldset[disabled] .btn-primary.active {
         width: 14vh !important;
     }
 
-    /* .navbar-toggle {
-        display: contents !important;
-    } */
+    .col-sm-3 {
+        width: 33.33333%;
+    }
+
+    .canceldisplay{
+        display: none !important;
+    }
 
     .navbar-wrapper {
         margin-top: 20px;
@@ -889,11 +894,9 @@ fieldset[disabled] .btn-primary.active {
 }
 
 @media (min-width: 1800px) {
-    .intro2{
-        height: 18vw;
-    }
+
     .intro1{
-        height: 10vw;
+        height: 20vh;
     }
 
     .container {
@@ -901,7 +904,7 @@ fieldset[disabled] .btn-primary.active {
     }
 
     .pricing-plan li {
-        padding: 0 8vw;
+        padding: 0 14px;
     }
 
     .rightAL{
@@ -909,13 +912,13 @@ fieldset[disabled] .btn-primary.active {
     }
 
     .page .rightAL{
-        padding: 0 3vw;
+        padding: 0 14px;
     }
 }
 
 @media (min-width: 1600px) and (max-width: 1800px){
     .intro1{
-        height: 8vw;
+        height: 14vh;
     }
 
     .container {
@@ -923,7 +926,7 @@ fieldset[disabled] .btn-primary.active {
     }
 
     .pricing-plan li {
-        padding: 0 6vw;
+        padding: 0 10px;
     }
 
     .rightAL{
@@ -931,7 +934,7 @@ fieldset[disabled] .btn-primary.active {
     }
 
     .page .rightAL{
-        padding: 0 2vw;
+        padding: 0 10px;
     }
 }
 
@@ -947,7 +950,7 @@ fieldset[disabled] .btn-primary.active {
     }
 
     .intro1{
-        height: 10vw;
+        height: 12vh;
     }
 
     .container {
@@ -955,7 +958,7 @@ fieldset[disabled] .btn-primary.active {
     }
 
     .pricing-plan li {
-        padding: 0 6vw;
+        padding: 0 8px;
     }
 
     .rightAL{
@@ -963,7 +966,7 @@ fieldset[disabled] .btn-primary.active {
     }
 
     .page .rightAL{
-        padding: 0 2vw;
+        padding: 0 8px;
     }
 }
 
@@ -979,7 +982,7 @@ fieldset[disabled] .btn-primary.active {
     }
 
     .pricing-plan li {
-        padding: 0 6vw;
+        padding: 0 6vh;
     }
 }
 
@@ -1005,6 +1008,25 @@ fieldset[disabled] .btn-primary.active {
     img.responsive {
         width: 100%;
         height: auto;
+    }
+
+    .mytoggle{
+        display: none;
+    }
+
+    .single{
+        width: 90% !important;
+        float: none !important;
+        margin: 0 auto ;
+    }
+
+    .intro1{
+        height: 30vw;
+        align-items: center;
+        margin: 0 auto;
+        /* top: 60%; */
+        /* left: 15%; */
+        position: relative;
     }
 }
 
@@ -1050,6 +1072,12 @@ fieldset[disabled] .btn-primary.active {
         left: 5%;
         bottom: 80px;
     }
+
+    .mycollapse{
+        display: none !important;
+    }
+
+    
 
     .carousel-caption h1 {
         font-size: 28px;
