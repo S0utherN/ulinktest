@@ -40,6 +40,10 @@
     src: url('../fonts/LibreBaskerville-Bold.ttf') format('truetype');
 }
 
+.img-circle{
+    width: 16vh !important;
+}
+
 .page-pricing{
     width: 50% !important;
     float: none !important;
