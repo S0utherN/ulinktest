@@ -813,7 +813,7 @@ li.pricing-desc {
     color: #000000 !important;
     border-top: none;
     padding: 10px 16px ;
-    text-align: center;
+    text-align: justify;
     font-family: 'sorare';
 }
 
@@ -972,7 +972,7 @@ fieldset[disabled] .btn-primary.active {
     }
 
     .pricing-plan li {
-        padding: 0 14px;
+        padding: 0 22px;
     }
 
     .rightAL{
