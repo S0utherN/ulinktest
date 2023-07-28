@@ -1805,7 +1805,7 @@ fieldset[disabled] .btn-primary.active {
     font-family: 'bodoni';
     font-size: 2.5em;
     font-weight: 800;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.2em;
     padding: 1vh;
     text-align: left;
     background: linear-gradient(to right, rgb(255, 255, 255), rgb(255, 255, 255), rgba(255, 255, 255, 0.974),rgba(255, 255, 255, 0.432));
