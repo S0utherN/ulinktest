@@ -815,6 +815,7 @@ li.pricing-desc {
     padding: 10px 16px ;
     text-align: justify;
     font-family: 'sorare';
+    hyphens: auto;
 }
 
 li.pricing-title {
