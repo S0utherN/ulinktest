@@ -24,6 +24,11 @@
     src: url('../fonts/Roboto-Bold.ttf') format('truetype');
 }
 
+@font-face {
+    font-family: 'bodoni';
+    src: url('../fonts/LibreBodoni-VariableFont_wght.ttf') format('truetype');
+}
+
 
 @font-face {
     font-family: 'sora';
@@ -38,6 +43,10 @@
 @font-face {
     font-family: 'libre';
     src: url('../fonts/LibreBaskerville-Bold.ttf') format('truetype');
+}
+
+.mycenter{
+    text-align: center !important;
 }
 
 .col-lg-offset-3{
@@ -86,6 +95,8 @@
     }
 }
 
+
+
 .col-lg-5{
     width: 100% !important;
 }
@@ -115,10 +126,11 @@
 
 .caricon .fa{
     text-align: left !important;
+    font-size: 20px;
 }
 
 .caricon li{
-    padding: 0 4px !important;
+    padding: 0 5px !important;
 }
 
 .disable h1{
@@ -126,7 +138,7 @@
 }
 
 .col-sm-3 .black{
-    border-bottom: 3px solid #000000e7 !important;
+    border-bottom: 2px solid #000000e7 !important;
     border-radius: 2px 2px 2px 2px;
 }
 
@@ -173,18 +185,18 @@
 .caricon{
     position: inherit;
     text-align: center;
-    padding: 4px;
+    padding: 5px;
    font-family: "4";
 
 }
 
 .caricon img{
-    width: 3vh;
+    width: 3.5vh;
     padding-left: 10px;
 }
 .caricon a{
     color:rgb(0, 0, 0) !important;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .text-center{
@@ -300,9 +312,9 @@
 
 .logo {
     position: absolute;
-    top: 1vw;
+    top: 4px;
     left: 2vw;
-    width: 85px; 
+    width: 34px; 
     height: auto;
 }
 
@@ -312,7 +324,7 @@
 
 body {
     color: rgb(0, 0, 0);
-    font-family: 'EBGaramond-Bold';
+    font-family: 'didot';
 	height: 100vh;
   	margin: 0;
   	background-size: 100%;
@@ -365,7 +377,7 @@ section p {
     color: rgb(0, 0, 0);
     font-size: 16px;
     font-weight: 400;
-    text-align: center;
+    text-align: justify;
     font-family: 'sorare';
 }
 
@@ -382,8 +394,12 @@ h1 {
 .navy-line {
     width: 80px;
     height: 1px;
-    margin: 50px auto 0;
-    border-bottom: 3px solid #262626d0;
+    /* margin: 20px auto; */
+    margin-top: 20px;
+    margin-bottom: 14px;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 2px solid #262626d0;
     position: relative;
 }
 
@@ -422,10 +438,11 @@ h1 {
 
 .navbar-default .nav li a {
     color: rgb(255, 255, 255);
-    font-family: 'sora', helvetica, arial, sans-serif;
+    font-family: 'didot', helvetica, arial, sans-serif;
     font-weight: 700;
     letter-spacing: 1px;
-    text-transform: uppercase;
+    text-transform: uppercase !important;
+    font-size: 14px !important;
 	/* text-shadow: 
         1px 1px 0 rgb(0, 0, 0), 
 		4px 3px 6px rgba(0, 0, 0, 0.5); */
@@ -1197,7 +1214,7 @@ fieldset[disabled] .btn-primary.active {
     }
 
     .logo{
-        width:40px;
+        width:30px;
     }
 
     .header-back.two {
@@ -1785,10 +1802,10 @@ fieldset[disabled] .btn-primary.active {
 }
 
 #header h1 {
-    font-family: 'libre';
+    font-family: 'bodoni';
     font-size: 2.5em;
     font-weight: 800;
-    letter-spacing: 0.035em;
+    letter-spacing: 0.1em;
     padding: 1vh;
     text-align: left;
     background: linear-gradient(to right, rgb(255, 255, 255), rgb(255, 255, 255), rgba(255, 255, 255, 0.974),rgba(255, 255, 255, 0.432));
