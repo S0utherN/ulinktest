@@ -1124,6 +1124,10 @@ fieldset[disabled] .btn-primary.active {
         /* left: 15%; */
         position: relative;
     }
+
+    /* .page-pricing{
+        width: 90% !important;
+    } */
 }
 
 /* @media (min-width: 576px) and (max-width: 650px) {
