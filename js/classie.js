@@ -78,3 +78,59 @@
     }
 
 })( window );
+
+
+window.onload = function() {
+    if (window.matchMedia('(min-width: 768px)').matches) {
+        // 针对 .col-sm-3 的 h2 和 p 元素
+        var maxH2Height = 0;
+        var maxPHeight = 0;
+        var cols = document.querySelectorAll('.col-sm-3');
+
+        for (var i = 0; i < cols.length; i++) {
+            var h2 = cols[i].querySelector('h2');
+            var p = cols[i].querySelectorAll('p');
+
+            if (h2.offsetHeight > maxH2Height) {
+                maxH2Height = h2.offsetHeight;
+            }
+            for (var j = 0; j < p.length; j++) {
+                if (p[j].offsetHeight > maxPHeight) {
+                    maxPHeight = p[j].offsetHeight;
+                }
+            }
+        }
+
+        for (var i = 0; i < cols.length; i++) {
+            var h2 = cols[i].querySelector('h2');
+            var p = cols[i].querySelectorAll('p');
+
+            h2.style.height = maxH2Height + 'px';
+            for (var j = 0; j < p.length; j++) {
+                p[j].style.height = maxPHeight + 'px';
+            }
+        }
+
+        // 针对 .col-lg-4 的 li 元素
+        var maxLiHeight = 0;
+        var colLg4s = document.querySelectorAll('.col-lg-4');
+
+        for (var i = 0; i < colLg4s.length; i++) {
+            var lis = colLg4s[i].querySelectorAll('p');
+
+            for (var j = 0; j < lis.length; j++) {
+                if (lis[j].offsetHeight > maxLiHeight) {
+                    maxLiHeight = lis[j].offsetHeight;
+                }
+            }
+        }
+
+        for (var i = 0; i < colLg4s.length; i++) {
+            var lis = colLg4s[i].querySelectorAll('p');
+
+            for (var j = 0; j < lis.length; j++) {
+                lis[j].style.height = maxLiHeight + 'px';
+            }
+        }
+    }
+};

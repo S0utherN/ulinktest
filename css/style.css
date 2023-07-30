@@ -45,6 +45,16 @@
     src: url('../fonts/LibreBaskerville-Bold.ttf') format('truetype');
 }
 
+.col-lg-4 p{
+    padding: 0 10px;
+}
+
+.col-lg-12 img{
+    padding-top: 16px;
+    position: inherit;
+    width: 4vw;
+}
+
 .mycenter{
     text-align: center !important;
 }
@@ -79,7 +89,7 @@
 }
 
 .dropdown-item{
-    color: #ffffff !important;
+    /* color: #ffffff !important; */
     text-align: center !important;
 }
 
@@ -151,6 +161,10 @@
     padding-left: 30px !important;
 }
 
+.col-sm-3 h3{
+    text-align: center;
+}
+
 .col-lg-5{
     padding-right: 30px !important;
     padding-left: 30px !important;
@@ -161,7 +175,7 @@
     /* background: rgb(0, 0, 0);
     border-radius: 4px 4px 4px 4px; */
     padding: 2vh;
-    margin-bottom: 2vh;
+    margin-bottom: 2px;
 }
 
 .d-block {
@@ -251,12 +265,7 @@
     margin-top: 20px !important;
 }
 
-.col-sm-3 h2{
-    /* margin-top: 8px !important;
-    background: rgba(0, 0, 0, 0.118);
-    border-radius: 4px 4px 4px 4px;
-    padding: 1vw; */
-}
+
 
 .btn-lg{
     background-color: rgba(56, 122, 50, 0.919) !important;
@@ -377,8 +386,9 @@ section p {
     color: rgb(0, 0, 0);
     font-size: 16px;
     font-weight: 400;
-    text-align: justify;
+    text-align: center;
     font-family: 'sorare';
+
 }
 
 address {
@@ -399,7 +409,7 @@ h1 {
     margin-bottom: 14px;
     margin-left: auto;
     margin-right: auto;
-    border-bottom: 2px solid #262626d0;
+    border-bottom: 1px solid #262626d0;
     position: relative;
 }
 
@@ -440,9 +450,9 @@ h1 {
     color: rgb(255, 255, 255);
     font-family: 'didot', helvetica, arial, sans-serif;
     font-weight: 700;
-    letter-spacing: 1px;
+    letter-spacing: 0.8px;
     text-transform: uppercase !important;
-    font-size: 14px !important;
+    font-size: 13px !important;
 	/* text-shadow: 
         1px 1px 0 rgb(0, 0, 0), 
 		4px 3px 6px rgba(0, 0, 0, 0.5); */
@@ -466,7 +476,7 @@ h1 {
 
 .navbar-default .navbar-nav > .active > a:focus {
     background: transparent;
-    color: #ffffff;
+    
 }
 
 .navbar-default.navbar-scroll .navbar-nav > .active > a:focus {
@@ -813,9 +823,9 @@ li.pricing-desc {
     color: #000000 !important;
     border-top: none;
     padding: 10px 16px ;
-    text-align: justify;
+    text-align: center;
     font-family: 'sorare';
-    hyphens: auto;
+
 }
 
 li.pricing-title {
@@ -959,6 +969,21 @@ fieldset[disabled] .btn-primary.active {
 
     .rightAL{
         font-size: 12px;
+    }
+
+    .logo{
+        position: relative;
+        left: 0;
+    }
+
+    .navbar-default .nav li a:hover {
+        color: rgb(255, 108, 253);
+    }
+
+    .navbar-default .navbar-nav > .active > a:hover {
+        background: transparent;
+        color: rgb(227, 158, 255);
+        
     }
 }
 
