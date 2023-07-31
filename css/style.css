@@ -81,12 +81,6 @@
     margin: 0 auto !important;
 }
 
-.page-pricing{
-    width: 50% !important;
-    float: none !important;
-    margin: 0 auto !important;
-}
-
 .dropdown-menu{
     /* font-size: 4em !important; */
     left: 0 !important;
@@ -1096,6 +1090,12 @@ fieldset[disabled] .btn-primary.active {
         width: 180%;
         height: auto;
     }
+}
+
+.single{
+    width: 50% !important;
+    float: none !important;
+    margin: 0 auto !important;
 }
 
 @media (max-width: 768px) {
