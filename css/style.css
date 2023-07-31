@@ -45,6 +45,15 @@
     src: url('../fonts/LibreBaskerville-Bold.ttf') format('truetype');
 }
 
+.leftalign{
+    text-align: left !important;
+    hyphens: auto;
+}
+
+.myMap{
+    padding-top: 6vh;
+}
+
 .col-lg-4 p{
     padding: 0 10px;
 }
@@ -105,11 +114,6 @@
     }
 }
 
-
-
-.col-lg-5{
-    width: 100% !important;
-}
 
 .col-md-6{
     margin: 0 auto !important;
@@ -983,7 +987,10 @@ fieldset[disabled] .btn-primary.active {
         
     }
 
-    
+    .myMap{
+        width: 60% !important;
+        
+    }
 }
 
 @media (min-width: 1800px) {
@@ -1122,9 +1129,9 @@ fieldset[disabled] .btn-primary.active {
         position: relative;
     }
 
-    /* .page-pricing{
-        width: 90% !important;
-    } */
+    section p{
+        font-size: 15px;
+    }
 }
 
 /* @media (min-width: 576px) and (max-width: 650px) {
