@@ -87,9 +87,11 @@ window.onload = function() {
         var maxPHeight = 0;
         var cols = document.querySelectorAll('.col-sm-3');
 
+
         for (var i = 0; i < cols.length; i++) {
             var h2 = cols[i].querySelector('h2');
             var p = cols[i].querySelectorAll('p');
+
 
             if (h2.offsetHeight > maxH2Height) {
                 maxH2Height = h2.offsetHeight;
@@ -99,6 +101,7 @@ window.onload = function() {
                     maxPHeight = p[j].offsetHeight;
                 }
             }
+
         }
 
         for (var i = 0; i < cols.length; i++) {
@@ -132,5 +135,20 @@ window.onload = function() {
                 lis[j].style.height = maxLiHeight + 'px';
             }
         }
+
+
+        var maxPricingTitleHeight = 0;
+            var pricingTitles = document.querySelectorAll('.pricing-title');
+
+            for (var i = 0; i < pricingTitles.length; i++) {
+                if (pricingTitles[i].offsetHeight > maxPricingTitleHeight) {
+                    maxPricingTitleHeight = pricingTitles[i].offsetHeight;
+                }
+            }
+
+            for (var i = 0; i < pricingTitles.length; i++) {
+                pricingTitles[i].style.height = maxPricingTitleHeight + 'px';
+            }
+
     }
 };
