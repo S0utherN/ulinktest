@@ -45,6 +45,21 @@
     src: url('../fonts/LibreBaskerville-Bold.ttf') format('truetype');
 }
 
+.btn-my {
+    position: fixed !important;
+    right: 10px !important;    /* 距离窗口右边的距离 */
+    bottom: 10px !important;   /* 距离窗口底部的距离 */
+    z-index: 1000 !important;  /* 这确保按钮始终在其他内容之上 */
+}
+
+.gold{
+    background: #000338 !important;
+}
+
+.goldback{
+    background: #ababab;
+}
+
 .leftalign{
     text-align: left !important;
     hyphens: auto;
@@ -67,6 +82,8 @@
 .mycenter{
     text-align: center !important;
 }
+
+
 
 .col-lg-offset-3{
     margin-left: none !important;
@@ -227,7 +244,7 @@
 
 .page{
     position: inherit;
-    margin-top: 2vw;
+    margin-top: 60px;
 }
 
 
@@ -317,9 +334,9 @@
 
 .logo {
     position: absolute;
-    top: 4px;
+    visibility: hidden;
     left: 2vw;
-    width: 34px; 
+    width: 60px; 
     height: auto;
 }
 
@@ -455,7 +472,7 @@ h1 {
 }
 
 .navbar-nav > li > a {
-    padding-top: 25px;
+    padding-top: 20px;
     border-top: 3px solid transparent;
 }
 
@@ -513,9 +530,7 @@ h1 {
     border-radius: 0;
 }
 
-.nav > li > a {
-    padding: 25px 10px 15px 10px;
-}
+
 
 .navbar-scroll .navbar-nav > li > a {
     padding: 20px 10px;
@@ -970,6 +985,7 @@ fieldset[disabled] .btn-primary.active {
     .logo{
         position: relative;
         left: 0;
+        visibility: visible;
     }
 
     .navbar-default .nav li a:hover {
@@ -985,6 +1001,31 @@ fieldset[disabled] .btn-primary.active {
     .myMap{
         width: 60% !important;
         
+    }
+
+    .navbar-right{
+        float: none !important;
+        display: flex;
+        justify-content: center; /* 水平居中 */
+        align-items: center;
+        padding-right: 6vw;
+    }
+
+    .nav-item{
+        padding: 0 10px;
+    }
+
+    .logo2{
+        visibility: hidden;
+        position: absolute;
+        
+    }
+
+    .mycenter2{
+        
+        float: none !important;
+        margin: 0 auto !important;
+    
     }
 }
 
@@ -1133,6 +1174,12 @@ fieldset[disabled] .btn-primary.active {
     section p{
         font-size: 15px;
     }
+
+    .mycenter2{
+        width: 100% !important;
+        float: none !important;
+        margin: 0 auto ;
+    }
 }
 
 /* @media (min-width: 576px) and (max-width: 650px) {
@@ -1250,9 +1297,14 @@ fieldset[disabled] .btn-primary.active {
         display: none;
     }
 
-    .logo{
+    .logo2{
         width:30px;
+        position: relative;
+        left: 0;
+        visibility: visible;
+        padding-top: 4px;
     }
+
 
     .header-back.two {
         background: url('../img/fengmian.jpg') center center no-repeat;
