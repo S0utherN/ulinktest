@@ -349,7 +349,7 @@
 
 body {
     color: rgb(0, 0, 0);
-    font-family: 'didot';
+    font-family: 'Microsoft YaHei';
 	height: 100vh;
   	margin: 0;
   	background-size: 100%;
@@ -464,7 +464,7 @@ h1 {
 
 .navbar-default .nav li a {
     color: rgb(255, 255, 255);
-    font-family: 'didot', helvetica, arial, sans-serif;
+    font-family: 'Microsoft YaHei', helvetica, arial, sans-serif;
     font-weight: 700;
     letter-spacing: 0.8px;
     text-transform: uppercase !important;
@@ -938,10 +938,14 @@ fieldset[disabled] .btn-primary.active {
         width: 14vh !important;
     }
 
+
+    .car4{
+        width: 25% !important;
+    }
     .btn-my {
         position: fixed !important;
         right: 10px !important;    /* 距离窗口右边的距离 */
-        bottom: 10px !important;   /* 距离窗口底部的距离 */
+        top: 25px !important;   /* 距离窗口底部的距离 */
         z-index: 1000 !important;  /* 这确保按钮始终在其他内容之上 */
     }
     .col-sm-3 {
@@ -1017,7 +1021,7 @@ fieldset[disabled] .btn-primary.active {
         display: flex;
         justify-content: center; /* 水平居中 */
         align-items: center;
-        padding-right: 4vw;
+        padding-right: 2.5vw;
     }
 
     .nav-item{
@@ -1063,6 +1067,10 @@ fieldset[disabled] .btn-primary.active {
     .page .rightAL{
         padding: 0 14px;
     }
+
+    .car-contain{
+        width: 1700px;
+    }
 }
 
 @media (min-width: 1600px) and (max-width: 1800px){
@@ -1071,7 +1079,7 @@ fieldset[disabled] .btn-primary.active {
     }
 
     .container {
-        width: 1100px;
+        width: 1200px;
     }
 
     .pricing-plan li {
@@ -1084,6 +1092,10 @@ fieldset[disabled] .btn-primary.active {
 
     .page .rightAL{
         padding: 0 10px;
+    }
+
+    .car-contain{
+        width: 1500px;
     }
 }
 
@@ -1103,7 +1115,7 @@ fieldset[disabled] .btn-primary.active {
     }
 
     .container {
-        width: 970px;
+        width: 1000px;
     }
 
     .pricing-plan li {
@@ -1116,6 +1128,10 @@ fieldset[disabled] .btn-primary.active {
 
     .page .rightAL{
         padding: 0 8px;
+    }
+
+    .car-contain{
+        width: 1200px;
     }
 }
 

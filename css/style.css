@@ -53,12 +53,6 @@
     padding: 0 !important;
 }
 
-
-
-.gold{
-    background: #491616 !important;
-}
-
 .goldback{
     background: #ababab;
 }
@@ -333,6 +327,7 @@
 .rightAL .price{
     font-family: "4" !important;
     padding-left: 30px;
+    text-align: right;
 }
 
 .logo {
@@ -938,13 +933,17 @@ fieldset[disabled] .btn-primary.active {
         width: 14vh !important;
     }
 
+    .car4{
+        width: 25% !important;
+    }
+
     .btn-my {
         position: fixed !important;
         right: 10px !important;    /* 距离窗口右边的距离 */
-        bottom: 10px !important;   /* 距离窗口底部的距离 */
+        top: 25px !important;   /* 距离窗口底部的距离 */
         z-index: 1000 !important;  /* 这确保按钮始终在其他内容之上 */
     }
-    .col-sm-3 {
+    .col-sm-3{
         width: 33.33333%;
     }
 
@@ -1063,6 +1062,10 @@ fieldset[disabled] .btn-primary.active {
     .page .rightAL{
         padding: 0 14px;
     }
+
+    .car-contain{
+        width: 1700px;
+    }
 }
 
 @media (min-width: 1600px) and (max-width: 1800px){
@@ -1071,7 +1074,7 @@ fieldset[disabled] .btn-primary.active {
     }
 
     .container {
-        width: 1100px;
+        width: 1200px;
     }
 
     .pricing-plan li {
@@ -1084,6 +1087,10 @@ fieldset[disabled] .btn-primary.active {
 
     .page .rightAL{
         padding: 0 10px;
+    }
+
+    .car-contain{
+        width: 1500px;
     }
 }
 
@@ -1103,7 +1110,7 @@ fieldset[disabled] .btn-primary.active {
     }
 
     .container {
-        width: 970px;
+        width: 1000px;
     }
 
     .pricing-plan li {
@@ -1116,6 +1123,10 @@ fieldset[disabled] .btn-primary.active {
 
     .page .rightAL{
         padding: 0 8px;
+    }
+
+    .car-contain{
+        width: 1200px;
     }
 }
 
@@ -1132,6 +1143,10 @@ fieldset[disabled] .btn-primary.active {
 
     .pricing-plan li {
         padding: 0 6vh;
+    }
+
+    .container {
+        width: 900px;
     }
 }
 
@@ -1242,7 +1257,10 @@ fieldset[disabled] .btn-primary.active {
         display: none !important;
     }
 
-    
+    .btn-my{
+        visibility: hidden;
+        position: absolute;
+    }
 
     .carousel-caption h1 {
         font-size: 28px;
