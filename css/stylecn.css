@@ -1021,11 +1021,11 @@ fieldset[disabled] .btn-primary.active {
         display: flex;
         justify-content: center; /* 水平居中 */
         align-items: center;
-        padding-right: 2.5vw;
+        padding-right: 9vw;
     }
 
     .nav-item{
-        padding: 0 10px;
+        padding: 0 50px;
     }
 
     .logo2{

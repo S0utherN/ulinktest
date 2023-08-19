@@ -45,6 +45,8 @@
     src: url('../fonts/LibreBaskerville-Bold.ttf') format('truetype');
 }
 
+
+
 .mediamy{
     font-size: 40px !important;
 }
@@ -1016,11 +1018,11 @@ fieldset[disabled] .btn-primary.active {
         display: flex;
         justify-content: center; /* 水平居中 */
         align-items: center;
-        padding-right: 4vw;
+        padding-right: 7vw;
     }
 
     .nav-item{
-        padding: 0 10px;
+        padding: 0 40px;
     }
 
     .logo2{
