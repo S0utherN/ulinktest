@@ -26,13 +26,13 @@
 
 @font-face {
     font-family: 'bodoni';
-    src: url('../fonts/jianti-title-xingshu.ttf') format('truetype');
+    src: url('../fonts/jianti2.ttf') format('truetype');
 }
 
 
 @font-face {
     font-family: 'sora';
-    src: url('../fonts/jianti-zhengwen1.ttf') format('truetype');
+    src: url('../fonts/jianti3.ttf') format('truetype');
 }
 
 @font-face {
@@ -45,6 +45,28 @@
     src: url('../fonts/LibreBaskerville-Bold.ttf') format('truetype');
 }
 
+@font-face {
+    font-family: 'menu';
+    src: url('../fonts/jianti6.otf');
+}
+
+@font-face {
+    font-family: 'zhengwen';
+    src: url('../fonts/jianti4.otf');
+}
+
+@font-face {
+    font-family: 'fengmian';
+    src: url('../fonts/jianti9.ttf');
+}
+
+.TFL{
+    width: 18vh !important;
+}
+
+.tiktok{
+    width: 5vh;
+}
 .mediamy{
     font-size: 40px !important;
 }
@@ -108,7 +130,7 @@
     min-width: 260px !important;
     border: none !important;
     text-align: center !important;
-    background-color: rgba(64, 64, 64, 0.697) !important;
+    background-color: rgba(64, 64, 64, 0.877) !important;
 }
 
 .dropdown-item{
@@ -402,9 +424,9 @@ section p {
     color: rgb(0, 0, 0);
     font-size: 20px;
     font-weight: 400;
-    text-align: center;
-    font-family: 'Microsoft YaHei';
-    letter-spacing: 0.04em;
+    text-align: justify;
+    font-family: 'zhengwen';
+    letter-spacing: 0.1em;
 }
 
 address {
@@ -464,8 +486,8 @@ h1 {
 
 .navbar-default .nav li a {
     color: rgb(255, 255, 255);
-    font-family: 'Microsoft YaHei', helvetica, arial, sans-serif;
-    font-weight: 700;
+    font-family: 'menu', helvetica, arial, sans-serif;
+    
     letter-spacing: 0.8px;
     text-transform: uppercase !important;
     font-size: 20px !important;
@@ -984,7 +1006,7 @@ fieldset[disabled] .btn-primary.active {
 
     .carousel-caption {
         left: 16vw;
-        
+        top: 8vw;
     }
 
     .featurette-heading {
