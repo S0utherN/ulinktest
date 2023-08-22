@@ -45,7 +45,29 @@
     src: url('../fonts/LibreBaskerville-Bold.ttf') format('truetype');
 }
 
+.TFL{
+    width: 18vh !important;
+    margin-right: 20px;
+}
 
+.SIA{
+    width: 8vh !important;
+    margin-left:40px;
+}
+
+.CP{    
+    width: 12vh !important;
+    margin: 0 40px;
+}
+
+.certification{
+    text-align: center;
+    margin: 0 auto;
+}
+
+.tiktok{
+    width: 5vh;
+}
 
 .mediamy{
     font-size: 40px !important;
@@ -397,9 +419,9 @@ a.navy-link:hover {
 
 section p {
     color: rgb(0, 0, 0);
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 400;
-    text-align: center;
+    text-align: justify;
     font-family: 'sorare';
 
 }
@@ -830,13 +852,17 @@ img.responsive {
 }
 
 li.pricing-desc {
-    font-size: 14px;
+    font-size: 11px !important;
     color: #000000 !important;
     border-top: none;
     padding: 10px 16px ;
     text-align: center;
     font-family: 'sorare';
 
+}
+
+.list-text{
+    font-size: 14px !important;
 }
 
 li.pricing-title {
