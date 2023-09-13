@@ -964,6 +964,15 @@ fieldset[disabled] .btn-primary.active {
         width: 25% !important;
     }
 
+    .floatcontact{
+        position: fixed !important;
+        z-index: 1000;
+        color: #ffffff !important;
+        font-family: "didot" !important;
+        left: 8px;
+        top: 20px;
+    }
+
     .btn-my {
         position: fixed !important;
         right: 10px !important;    /* 距离窗口右边的距离 */
@@ -1005,8 +1014,7 @@ fieldset[disabled] .btn-primary.active {
     }
 
     .carousel-caption {
-        left: 16vw;
-        
+        left: 8vw;
     }
 
     .featurette-heading {
