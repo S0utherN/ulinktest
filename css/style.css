@@ -45,6 +45,36 @@
     src: url('../fonts/LibreBaskerville-Bold.ttf') format('truetype');
 }
 
+.faqHeader {
+    font-size: 27px;
+    margin: 20px;
+}
+
+.panel-heading [data-toggle="collapse"]:after {
+    font-family: 'FontAwesome';
+    content: "\f104"; /* "play" icon */
+    float: right;
+    color: #F58723;
+    font-size: 18px;
+    line-height: 22px;
+    /* rotate "play" icon from > (right arrow) to down arrow */
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+
+.panel-heading [data-toggle="collapse"].collapsed:after {
+    /* rotate "play" icon from > (right arrow) to ^ (up arrow) */
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+    color: #454444;
+}
+
 .TFL{
     width: 18vh !important;
     margin-right: 20px;
@@ -131,6 +161,7 @@
 .dropdown-item{
     /* color: #ffffff !important; */
     text-align: center !important;
+    font-size: 22px !important;
 }
 
 @media (min-width: 768px) {
@@ -486,7 +517,7 @@ h1 {
     font-weight: 700;
     letter-spacing: 0.8px;
     text-transform: uppercase !important;
-    font-size: 13px !important;
+    font-size: 13px ;
 	/* text-shadow: 
         1px 1px 0 rgb(0, 0, 0), 
 		4px 3px 6px rgba(0, 0, 0, 0.5); */
@@ -970,7 +1001,7 @@ fieldset[disabled] .btn-primary.active {
         color: #ffffff !important;
         font-family: "didot" !important;
         left: 8px;
-        top: 20px;
+        top: 28px;
     }
 
     .btn-my {
@@ -1051,7 +1082,7 @@ fieldset[disabled] .btn-primary.active {
         display: flex;
         justify-content: center; /* 水平居中 */
         align-items: center;
-        padding-right: 7vw;
+        padding-right: 2.2vw;
     }
 
     .nav-item{
