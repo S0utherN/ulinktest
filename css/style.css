@@ -45,6 +45,10 @@
     src: url('../fonts/LibreBaskerville-Bold.ttf') format('truetype');
 }
 
+.FAQ{
+    font-family: "sora" !important;
+}
+
 .faqHeader {
     font-size: 27px;
     margin: 20px;
