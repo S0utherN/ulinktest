@@ -45,6 +45,8 @@
     src: url('../fonts/LibreBaskerville-Bold.ttf') format('truetype');
 }
 
+
+
 .FAQ{
     font-family: "sora" !important;
 }
@@ -1317,6 +1319,9 @@ fieldset[disabled] .btn-primary.active {
 } */
 
 @media (max-width: 768px) {
+    .canceldisplay2{
+        display: none !important;
+    }
     .carousel-caption,
     .carousel-caption.blank {
         left: 5%;
