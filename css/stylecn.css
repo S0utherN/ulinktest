@@ -60,6 +60,12 @@
     src: url('../fonts/jianti9.ttf');
 }
 
+.h1logo{
+    width: 5% !important;
+    padding-top: 0 !important;
+    margin: 0 30px;
+}
+
 .TFL{
     width: 18vh !important;
 }
@@ -75,7 +81,9 @@
     padding: 0 !important;
 }
 
-
+.margin10{
+    padding-top: 10px;
+}
 
 .gold{
     background: #491616 !important;
@@ -307,9 +315,19 @@
 .btn-lg{
     background-color: rgba(56, 122, 50, 0.919) !important;
 }
+.FAQ{
+    font-family: "sora" !important;
+}
 
+.faqHeader {
+    font-size: 27px;
+    margin: 20px;
+}
 .col-lg-12 h1{
-    text-transform: uppercase;
+    /* text-transform: uppercase;
+    -webkit-text-fill-color: rgba(0, 0, 0, 0.947);;
+    background: linear-gradient(to right, rgba(183, 216, 252, 0.699), rgba(217, 239, 252, 0.173), rgb(217, 239, 252, 0.173),rgba(189, 221, 255, 0.699));
+    border-radius: 6px 6px 6px 6px; */
 }
 
 .black{
@@ -437,6 +455,7 @@ h1 {
     margin-top: 10px;
     font-size: 50px;
     font-weight: 800;
+    
 }
 
 .navy-line {
