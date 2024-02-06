@@ -25,8 +25,8 @@
 }
 
 @font-face {
-    font-family: 'bodoni';
-    src: url('../fonts/jianti2.ttf') format('truetype');
+    font-family: 'song';
+    src: url('../fonts/Song.ttf') format('truetype');
 }
 
 
@@ -389,7 +389,7 @@
 
 body {
     color: rgb(0, 0, 0);
-    font-family: 'Microsoft YaHei';
+    font-family: 'song';
 	height: 100vh;
   	margin: 0;
   	background-size: 100%;
@@ -454,7 +454,7 @@ address {
 h1 {
     margin-top: 10px;
     font-size: 50px;
-    font-weight: 800;
+    /* font-weight: 200; */
     
 }
 
@@ -498,18 +498,18 @@ h1 {
 }
 
 .navbar-default {
-    background: rgba(6, 6, 6, 0.967);
+    background: rgba(45, 110, 175, 0.927);
     border-color: transparent;
     transition: all 0.3s ease-in-out 0s;
 }
 
 .navbar-default .nav li a {
     color: rgb(255, 255, 255);
-    font-family: 'menu', helvetica, arial, sans-serif;
+    font-family: 'song', helvetica, arial, sans-serif;
     
     letter-spacing: 0.8px;
     text-transform: uppercase !important;
-    font-size: 18px !important;
+    font-size: 24px !important;
     line-height: 1.42 !important;
 	/* text-shadow: 
         1px 1px 0 rgb(0, 0, 0), 
@@ -1947,7 +1947,7 @@ fieldset[disabled] .btn-primary.active {
 }
 
 #header h1 {
-    font-family: 'bodoni';
+    font-family: 'song';
     font-size: 5em;
     font-weight: 100;
     letter-spacing: 0.2em;
